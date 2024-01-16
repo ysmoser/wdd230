@@ -1,0 +1,119 @@
+/* Normalization */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+main {
+    display: block;
+}
+
+body {
+    font-family: 'Barlo Semi Condensed', sans-serif;
+}
+
+header,
+footer {
+    background-color: #F3F7E7;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 500;
+    color: #D60E6C;
+    line-height: 3rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+main {
+    padding: 2rem 1.5rem;
+    background-color: #f4f4f4;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    background-color: black;
+    color: white;
+    font-weight: 200;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card h2,
+.card h3,
+.card a,
+.card img,
+.card p {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+}
+
+.card h3 {
+    padding-top: 1rem;
+    color: #D60E6C;
+    font-size: 1.3rem;
+}
+
+.card a {
+    padding-top: 0.4rem;
+    padding-bottom: 1.5rem;
+    color: #7960ac;
+    font-size: .75rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-top: 1.2rem;
+}
+
+.card img {
+    max-width: 90%;
+}
+
+footer p {
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 37.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .card img {
+        max-width: 86%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
