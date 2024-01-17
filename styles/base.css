@@ -41,10 +41,10 @@ nav {
 
 nav a {
     color: white;
-    padding-bottom: 15px;
     font-size: 1.3em;
     font-weight: 200;
     text-decoration: none;
+    padding-bottom: 10px;
 }
 
 main {
@@ -61,6 +61,7 @@ main h2 {
     font-size: 1.5em;
     font-weight: 400;
     padding-bottom: 10px;
+    line-height: 2rem;
 }
 
 section.card {
@@ -84,6 +85,11 @@ section p {
 
 ul {
     list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    padding-bottom: 5px;
 }
 
 li a {
@@ -92,14 +98,15 @@ li a {
 
 footer {
     background-color: rgb(243 247 231);
-    padding: 15px 0px;
+    padding: 35px 0px;
 }
 
 footer p {
     text-align: center;
     color: rgb(24, 24, 24);
     font-weight: 300;
-    line-height: 2.5;
+    line-height: 1.8;
+    margin: 0px;
 }
 
 footer img {
