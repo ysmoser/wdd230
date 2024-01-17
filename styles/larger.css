@@ -44,4 +44,18 @@
     ul {
         padding-left: 40px;
     }
+
+    .footer-info {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .footer-info p {
+        flex: 1 1 100%;
+    }
+
+    footer .footer-info img {
+        width: 10%;
+        padding-left: 0.7rem;
+    }
 }
