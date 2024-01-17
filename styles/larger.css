@@ -1,0 +1,23 @@
+@media screen and (min-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 30vh
+    }
+
+    h1 {
+        padding-left: 1rem;
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 960px) {}

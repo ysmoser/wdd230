@@ -16,14 +16,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 30px 10px;
 }
 
 h1 {
     color: #e20b6d;
-    padding-left: 1.5em;
-    font-size: 3em;
+    padding-left: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+img {
+    width: 17vh;
 }
 
 nav {
@@ -31,7 +35,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    justify-content: space-evenly;
+    padding: 15px 10px;
 }
 
 nav a {
@@ -55,6 +60,7 @@ main h2 {
     text-align: center;
     font-size: 1.5em;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 section.card {
