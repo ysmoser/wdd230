@@ -35,7 +35,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     padding: 15px 10px;
 }
 
@@ -110,6 +109,8 @@ footer p {
 }
 
 footer img {
-    width: 3.5%;
-    padding-left: 1%;
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
 }

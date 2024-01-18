@@ -1,20 +1,23 @@
 @media screen and (min-width: 600px) {
     nav {
         flex-direction: row;
+        justify-content: center;
     }
 
     nav a {
-        flex: 1 1 100%;
-        text-align: center;
         padding-bottom: 0px;
     }
 
+    nav a:not(:last-child) {
+        padding-right: 5vw;
+    }
+
     img {
-        width: 30vh
+        width: 20vh
     }
 
     h1 {
-        padding-left: 1rem;
+        padding-left: 2rem;
         font-size: 3rem;
     }
 
@@ -22,7 +25,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
-        padding-bottom: 60px;
+        padding: 50px 0;
     }
 
     h2 {
@@ -47,15 +50,18 @@
 
     .footer-info {
         display: flex;
+        justify-content: center;
+        margin: 0 auto;
         padding-bottom: 10px;
     }
 
     .footer-info p {
-        flex: 1 1 100%;
+        margin-right: 15px;
     }
 
-    footer .footer-info img {
-        width: 10%;
-        padding-left: 0.7rem;
+    footer img {
+        width: 5%;
+        margin: 0;
+        padding: 0;
     }
 }
