@@ -36,6 +36,10 @@ h1 {
     color: #2f2824;
 }
 
+h2 {
+    font-size: 24px;
+}
+
 p,
 li {
     font-size: 17px;
@@ -75,4 +79,25 @@ ul {
 .color3 {
     background-color: #2f2824;
     color: white;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        max-width: 60%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 19px;
+    }
 }
