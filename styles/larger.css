@@ -59,6 +59,12 @@
         padding-left: 40px;
     }
 
+    iframe {
+        grid-column: 1/4;
+        max-width: 1000px;
+        width: 100vw;
+    }
+
     .footer-info {
         display: flex;
         justify-content: center;

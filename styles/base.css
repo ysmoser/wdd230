@@ -138,6 +138,12 @@ section p {
     color: rgb(109 123 67);
 }
 
+iframe {
+    display: grid;
+    max-width: 1000px;
+    width: 98vw;
+}
+
 footer {
     background-color: rgb(243 247 231);
     padding: 35px 0px;
