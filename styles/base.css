@@ -30,20 +30,63 @@ img {
     width: 17vh;
 }
 
-nav {
+#menu {
+    font-size: 2rem;
+    padding: 3px 7px 6px;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
     background-color: rgb(24 24 24);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 10px;
+    padding: 20px 10px;
+    margin-top: 0px;
 }
 
-nav a {
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
     color: white;
     font-size: 1.3em;
     font-weight: 200;
     text-decoration: none;
     padding-bottom: 10px;
+}
+
+/* when clicked, the class ".open" will be added by Javascript. The css for .open as follows. */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.open li:last-child a {
+    padding-bottom: 0px;
+}
+
+.navigation.open {
+    text-align: center;
 }
 
 main {
@@ -82,16 +125,16 @@ section p {
 }
 
 
-ul {
+.card ul {
     list-style-type: none;
     padding-left: 20px;
 }
 
-li {
+.card li {
     padding-bottom: 5px;
 }
 
-li a {
+.card li a {
     color: rgb(109 123 67);
 }
 
@@ -114,5 +157,3 @@ footer img {
     margin: 0 auto;
     padding: 10px 0;
 }
-
-/* test */
