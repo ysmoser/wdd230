@@ -11,14 +11,14 @@ main {
 
 header {
     background: #D4EDF4;
-    padding: 2rem 1re;
+    padding: 2rem 1rem;
 }
 
 h1,
 h2,
 p,
 li {
-    font-family: "Sofia Sans Condensed" sans-serif;
+    font-family: "Sofia Sans Condensed", sans-serif;
     line-height: 1.3;
     margin: 0;
 }
