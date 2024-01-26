@@ -10,7 +10,7 @@ main {
 }
 
 header {
-    background: #daffe8;
+    background: #D4EDF4;
     padding: 2rem 1re;
 }
 
@@ -25,7 +25,6 @@ li {
 
 h1,
 h2 {
-    color: #FF9310;
     padding: 1.3em 0 0.3em;
 }
 
@@ -33,11 +32,16 @@ h1 {
     padding: 2em .5em;
     text-align: center;
     font-size: 2em;
-    color: #2f2824;
+    color: #2A2E30;
 }
 
 h2 {
     font-size: 24px;
+    color: #345C72;
+}
+
+p {
+    color: #2A2E30;
 }
 
 p,
@@ -65,19 +69,26 @@ ul {
 }
 
 .color1 {
-    background-color: #daffe8;
+    background-color: #FF9E7A;
     margin-right: 10px;
     margin-bottom: 30px;
 }
 
 .color2 {
-    background-color: #FF9310;
+    background-color: #D4EDF4;
     margin-right: 10px;
     margin-bottom: 30px;
 }
 
 .color3 {
-    background-color: #2f2824;
+    background-color: #345C72;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.color4 {
+    background-color: #2A2E30;
     color: white;
 }
 
