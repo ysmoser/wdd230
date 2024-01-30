@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,42 @@
     <link rel="favicon" href="images/wdd230-favicon.png">
     <meta property="og:title" content="Cache Chamber">
     <meta property="og:type" content="website">
-    <meta property="image" content="#">
-    <meta property="og:url" content="#">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/chamber/images/cache-valley-image.jpg">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/chamber/">
     <meta property="og:description" content="BYU WDD230 Chache Chamber Assignment">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Cache Chamber</h1>
+        <button class="cta">Become A Member</button>
+    </header>
+
+    <nav>
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="events">Events Section</section>
+        <section class="weather">Weather Card</section>
+        <section class="spot">Spotlights</section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span> Yuri Moser </p>
+            <p>BYUI WDD230</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
 </body>
+
+
 </html>

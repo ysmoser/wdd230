@@ -1,0 +1,8 @@
+@media (min-width: 981px) {
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,27 @@
+@media (min-width: 620px) {
+
+    /* Footer */
+    .footer-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    /* Navigation */
+    button#menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        margin: 0px auto;
+        justify-content: end;
+        max-width: 1600px;
+    }
+
+    .navigation li {
+        display: block;
+        padding-right: 30px;
+    }
+
+}
