@@ -78,6 +78,11 @@ header img {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: gray;
+}
+
+
 /* when clicked, the class ".open" will be added by Javascript. The css for .open as follows. */
 .open li {
     display: block;
