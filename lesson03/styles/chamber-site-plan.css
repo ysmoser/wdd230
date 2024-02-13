@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
+/* Colors */
+
+:root {
+    --red: #ff4400;
+    --green-light: #ebf7fa;
+    --green-dark: #3D4C29;
+    --gray-dark: #2A2E30;
+}
+
 body {
     margin: 0;
 }
@@ -10,7 +19,7 @@ main {
 }
 
 header {
-    background: #D4EDF4;
+    background: var(--green-light);
     padding: 2rem 1rem;
 }
 
@@ -32,16 +41,16 @@ h1 {
     padding: 2em .5em;
     text-align: center;
     font-size: 2em;
-    color: #2A2E30;
+    color: var(--gray-dark);
 }
 
 h2 {
     font-size: 24px;
-    color: #345C72;
+    color: var(--red);
 }
 
 p {
-    color: #2A2E30;
+    color: var(--gray-dark);
 }
 
 p,
@@ -69,26 +78,26 @@ ul {
 }
 
 .color1 {
-    background-color: #FF9E7A;
+    background-color: var(--red);
     margin-right: 10px;
     margin-bottom: 30px;
 }
 
 .color2 {
-    background-color: #D4EDF4;
+    background-color: var(--green-light);
     margin-right: 10px;
     margin-bottom: 30px;
 }
 
 .color3 {
-    background-color: #345C72;
+    background-color: var(--green-dark);
     color: white;
     margin-right: 10px;
     margin-bottom: 30px;
 }
 
 .color4 {
-    background-color: #2A2E30;
+    background-color: var(--gray-dark);
     color: white;
 }
 

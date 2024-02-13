@@ -16,9 +16,9 @@ body {
 /* Colors */
 
 :root {
-    --red: #ff4f0f;
-    --blue-light: #ebf7fa;
-    --blue-dark: #345C72;
+    --red: #ff4400;
+    --green-light: #ebf7fa;
+    --green-dark: #3D4C29;
     --gray-dark: #2A2E30;
 }
 
@@ -61,7 +61,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--blue-dark);
+    background-color: var(--green-dark);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -104,7 +104,7 @@ h1 {
 }
 
 button.cta {
-    background-color: var(--blue-light);
+    background-color: var(--green-light);
     font-size: 1em;
     padding: 0.3em .7em;
     color: var(--gray-dark);
@@ -202,7 +202,7 @@ h2 {
 }
 
 .weather {
-    background-color: var(--blue-light);
+    background-color: var(--green-light);
     padding: 3em 5em;
 }
 
