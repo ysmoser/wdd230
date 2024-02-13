@@ -31,12 +31,16 @@ header img {
     height: auto;
 }
 
+nav {
+    position: relative;
+}
+
 #menu {
     font-size: 2rem;
     padding: 3px 7px 6px;
     background-color: transparent;
     color: white;
-    position: fixed;
+    position: absolute;
     right: 10px;
     align-items: center;
     justify-content: center;
@@ -105,10 +109,34 @@ main {
     grid-template-columns: 1fr;
 }
 
-/*  Logan Temple Image */
+/*  Hero Image - Logan Temple and the lable  */
 .hero img {
     width: 100%;
     height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.herolabel {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: radial-gradient(rgba(255, 255, 255, 1) 43%, rgba(219, 220, 216, 1) 60%, rgba(25, 31, 6, 05) 80%);
+    border: 1px solid rgba(0, 0, 0, .30);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
 }
 
 main h2,
