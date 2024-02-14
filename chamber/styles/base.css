@@ -17,26 +17,68 @@ body {
 
 :root {
     --red: #ff4400;
-    --green-light: #ebf7fa;
+    --green-light: #e7edde;
     --green-dark: #3D4C29;
     --gray-dark: #2A2E30;
 }
 
-/* Header */
+/* 
+==============
+=== Header ===
+==============
+ */
 
-header {
-    background-image: url(../images/cache-valley-image\ .webp);
+.hero img {
     width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    position: relative;
+    height: auto;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.background-images picture,
+.background-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headings h1 {
+    margin: 0;
+    color: var(--gray-dark);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+.headings .cta {
+    margin-top: 20px;
+    background-color: var(--red);
+    color: white;
+    font-size: .7em;
+    padding: .8em 1.5em;
+    border: none;
+}
+
+
 
 /*  Toggle Switch */
 
@@ -44,7 +86,7 @@ header {
     position: absolute;
     width: 60px;
     height: 34px;
-    right: 60px;
+    right: 10px;
     top: 10px;
 }
 
@@ -97,23 +139,16 @@ input:checked+.slider:before {
 /*  this is the end of toggle switch */
 
 
-h1 {
-    font-size: 2rem;
-    color: var(--gray-dark);
-    text-align: center;
-}
 
-button.cta {
-    background-color: var(--green-light);
-    font-size: 1em;
-    padding: 0.3em .7em;
-    color: var(--gray-dark);
-}
-
-/* Navigation */
+/* 
+================
+===Navigation===
+================
+ */
 
 nav {
     background-color: var(--gray-dark);
+    position: relative;
 }
 
 #menu {
@@ -121,7 +156,7 @@ nav {
     padding: 3px 7px 6px;
     background-color: transparent;
     color: white;
-    position: fixed;
+    position: absolute;
     right: 10px;
     align-items: center;
     justify-content: center;
@@ -181,33 +216,43 @@ nav {
     text-align: center;
 }
 
-/*  Main */
+/*  
+==========
+===Main===
+==========
+ */
 
 main {
     max-width: 1000px;
     margin: 0px auto;
-    padding: 10px 0px;
-    display: grid;
-    grid-template-columns: 1fr;
+    padding: 10px;
 }
 
 section {
-    margin: 5px;
+    margin: 0px auto;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--red);
     text-align: center;
 }
 
 .weather {
     background-color: var(--green-light);
-    padding: 3em 5em;
+    padding: 20px 10px;
+}
+
+.weather p {
+    text-align: center;
 }
 
 
-/* Footer */
+/*
+=============
+=== Footer=== 
+=============
+*/
 
 footer {
     background-color: var(--gray-dark);
