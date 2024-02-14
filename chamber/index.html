@@ -54,16 +54,20 @@
 
     <main class="dark-mode">
         <section class="events">
-            <h2>Information</h2>
+            <h2>Events</h2>
             <p>Sapien faucibus facilisi letius senectus magnis montes maecenas id sagittis nibh interdum. Tellus magnis
                 porta sollicitudin augue class pellentesque consequat lectus suspendisse curabitur. Est fames mollis vel
                 felis senectus donec ex suscipit eleifend venenatis molestie. Inceptos magnis justo nibh nec ad molestie
                 felis ac auctor pulvinar. Netus sit porttitor si natoque mauris lorem integer odio pede mus.</p>
         </section>
         <section class="weather light-bg">
-            <h2>Information</h2>
-            <p>Weather<span id="weather"></span></p>
-            <p>Number of Visits<span id="visits"></span></p>
+            <h2>Weather</h2>
+            <h3>Humidity<span id="weather"></span></h3>
+            <!-- WIND CHILL SECTION -->
+            <h3>wind Chill<span id="visits"></span></h3>
+            <input type="number" id="temperatureInput" placeholder="temperature">
+            <input type="number" id="windSpeedInput" placeholder="Wind windSpeed">
+            <p id="windChillValue"></p>
         </section>
         <section class="spot spot-1">
             <h2>Spotlights</h2>
@@ -92,6 +96,7 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 
