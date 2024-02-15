@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+}
+
+/* Last Modified Dates on Footer */
+footer {
+    background-color: rgb(243 247 231);
+    padding: 35px 0px;
+}
+
+footer p {
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 0px;
+}
+
+@media (min-width: 620px) {
+
+    .footer-info {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    .footer-info p {
+        margin-right: 15px;
+    }
+}
