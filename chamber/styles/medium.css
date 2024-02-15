@@ -4,12 +4,17 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
+        grid-gap: 50px 30px;
+        padding: 5em 0em;
     }
 
-    section.events,
+    section.events {
+        grid-column: 1/2;
+    }
+
     section.weather {
-        grid-column: 1/3;
+        grid-column: 2/3;
+        margin: 0px;
     }
 
     section.spot-1 {
@@ -44,6 +49,12 @@
     .navigation li {
         display: block;
         padding-right: 30px;
+    }
+
+    /*  Logo */
+    nav img {
+        width: 80px;
+        height: 80px;
     }
 
 }
