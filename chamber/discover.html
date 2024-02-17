@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Chamber</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description" content="WDD 230 website design and creation assignment titled Cache Chamber">
+    <link rel="icon" href="images/chamber-favicon.webp">
+    <meta property="og:title" content="Cache Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/chamber/images/cache-valley-image.webp">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/chamber/">
+    <meta property="og:description" content="BYU WDD230 Chache Chamber Assignment">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <!-- Toggle Switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+            <div class="bg-img">
+                <picture>
+                    <source srcset="images/wk06-large.webp" media="(min-width: 981px)">
+                    <source srcset="images/wk06-medium.webp" media="(min-width: 620px)">
+                    <source srcset="images/wk06-small.webp">
+                    <img src="images/wk06-jpg-large.jpg" alt="Cache Valley Utah" width="1300" height="582">
+                </picture>
+            </div>
+            <div class="headings">
+                <h1>Cache Chamber</h1>
+                <button class="cta">Become A Member</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <img src="images/cache-chamber-logo.png" alt="Cache Chamber logo">
+        <ul class="navigation">
+            <li><a id="home-link">Home</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="disc-contents">
+            <section>
+                <h2>Your Visit History</h2>
+                <p id="last"></p>
+            </section>
+            <section>
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis recusandae iusto quae
+                    beatae
+                    maiores quod illo magnam repellat reprehenderit, aliquid sit, debitis optio quam dolore totam,
+                    ratione
+                    unde porro!</p>
+            </section>
+            <section>
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis recusandae iusto quae
+                    beatae
+                    maiores quod illo magnam repellat reprehenderit, aliquid sit, debitis optio quam dolore totam,
+                    ratione
+                    unde porro!</p>
+            </section>
+            <section>
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis recusandae iusto quae
+                    beatae
+                    maiores quod illo magnam repellat reprehenderit, aliquid sit, debitis optio quam dolore totam,
+                    ratione
+                    unde porro!</p>
+            </section>
+        </div>
+        <div class="disc-img">
+            <figure>
+                <img src="" alt="Cache Valley" loading="lazy" width="400" height="600">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="Cache Valley" loading="lazy" width="400" height="600">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="Cache Valley" loading="lazy" width="400" height="600">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="Cache Valley" loading="lazy" width="400" height="600">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="Cache Valley" loading="lazy" width="400" height="600">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span> Yuri Moser </p>
+            <p>BYUI WDD230</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/lastvisit.js"></script>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+
+</html>
