@@ -86,4 +86,23 @@
         padding-bottom: 50px;
     }
 
+    /* Image Hover Effect */
+
+    .disc-img .overlay {
+        overflow: hidden;
+        display: inline-block;
+        transition: transform .8s ease-in-out;
+    }
+
+    .disc-img .overlay img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 1s ease-in-out;
+    }
+
+    .disc-img .overlay:hover img {
+        transform: scale(1.3);
+    }
+
 }
