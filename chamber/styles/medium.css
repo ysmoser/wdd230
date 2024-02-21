@@ -92,21 +92,22 @@
 
     .disc-img figure {
         padding-bottom: 50px;
+        margin: 0px;
     }
 
     /* Image Hover Effect */
 
-    .disc-img .overlay {
+    .disc-img .hov-scale {
         overflow: hidden;
         display: inline-block;
         transition: transform .8s ease-in-out;
     }
 
-    .disc-img .overlay img {
+    .disc-img .hov-scale img {
         transition: transform 1s ease-in-out;
     }
 
-    .disc-img .overlay:hover img {
+    .disc-img .hov-scale:hover img {
         transform: scale(1.3);
     }
 
