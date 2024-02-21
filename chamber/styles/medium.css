@@ -1,5 +1,14 @@
 @media (min-width: 620px) {
 
+    .hero .headings h1 {
+        font-size: 2em;
+    }
+
+    .headings button.cta {
+        font-size: 0.9em;
+    }
+
+
     /*  Main */
     main {
         display: grid;
@@ -82,7 +91,6 @@
 
 
     .disc-img figure {
-        margin: 0px;
         padding-bottom: 50px;
     }
 
@@ -95,9 +103,6 @@
     }
 
     .disc-img .overlay img {
-        display: block;
-        width: 100%;
-        height: auto;
         transition: transform 1s ease-in-out;
     }
 

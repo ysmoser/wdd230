@@ -247,6 +247,23 @@ h2 {
     text-align: center;
 }
 
+/*---------------------- Lazy Loading --------------------------*/
+
+.disc-img figure {
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 375px;
+    margin: 0;
+}
+
+.disc-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 /*
 =============
