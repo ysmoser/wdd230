@@ -1,0 +1,59 @@
+:root {
+    --greendark: hsla(170, 88%, 17%, 1);
+    --greenlight: hsla(170, 88%, 38%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --lightgrey: hsla(0, 0%, 93%, 1);
+    --darkgrey: hsla(0, 0%, 70%, 1);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: hsla(0, 0%, 70%, 1);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+table {
+    border: thin solid var(--lightgrey);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--greendark);
+    font-size: 1.1em;
+}
+
+tr:first-child th,
+tr:nth-child(2) th:first-child {
+    background-color: var(--greendark);
+    color: var(--white);
+    border-color: var(--greendark);
+}
+
+th,
+td {
+    padding: 10px 20px;
+    border: 1px solid var(--darkgrey);
+}
+
+tr:nth-child(2) th:not(:first-child) {
+    background-color: var(--greenlight);
+    border-color: var(--greenlight);
+    border-right: 1px solid var(--darkgrey);
+}
+
+th {
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--lightgrey);
+}
