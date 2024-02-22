@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Chamber</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description" content="WDD 230 website design and creation assignment titled Cache Chamber">
+    <link rel="icon" href="images/chamber-favicon.webp">
+    <meta property="og:title" content="Cache Valley Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/chamber/images/cache-valley-image.webp">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/chamber/">
+    <meta property="og:description" content="BYU WDD230 Chache Chamber Assignment">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <!-- Toggle Switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+            <div class="bg-img">
+                <picture>
+                    <source srcset="images/chamber-cache-large.webp" media="(min-width: 981px)">
+                    <source srcset="images/chamber-cache-medium.webp" media="(min-width: 620px)">
+                    <source srcset="images/chamber-cache-small.webp">
+                    <img src="images/chamber-cache.jpg" alt="Cache Valley Utah" width="1300" height="582">
+                </picture>
+            </div>
+            <div class="headings">
+                <h1>Cache Chamber</h1>
+                <button class="cta">Become A Member</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <img src="images/cache-chamber-logo.png" alt="Cache Chamber logo">
+        <ul class="navigation">
+            <li><a id="home-link">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="dark-mode">
+        <h1>Thank you for applying to Cache Chamber of Commerce.</h1>
+        <p>Your membership application has been successfully submitted. In order to provide you with more information
+            about your membership, we will be sending you an email shortly. We appreciate your interest and look forward
+            to welcoming you as a member of our chamber!</p>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span> Yuri Moser </p>
+            <p>BYUI WDD230</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+
+</html>

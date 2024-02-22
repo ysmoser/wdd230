@@ -18,7 +18,11 @@ body {
     --red: #ff4400;
     --green-light: #e7edde;
     --green-dark: #3D4C29;
-    --gray-dark: #2A2E30;
+    --grey-dark: #2A2E30;
+    --lightgrey: hsla(0, 0%, 93%, 1);
+    --midgrey: hsla(0, 0%, 70%, 1);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: hsla(0, 0%, 70%, 1);
 }
 
 /* 
@@ -29,7 +33,7 @@ body {
 
 /*  To remove the unwanted gap between the hero and nav I added the bg color to match the nave */
 header {
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
 }
 
 .hero img {
@@ -110,7 +114,7 @@ header {
 }
 
 input:checked+.slider {
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
 }
 
 
@@ -137,7 +141,7 @@ input:checked+.slider:before {
 
 
 nav {
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
     position: relative;
     display: flex;
     padding: 5px 10px 10px;
@@ -171,7 +175,7 @@ nav img {
 }
 
 .navigation {
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,7 +276,7 @@ h2 {
 */
 
 footer {
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
     padding: 30px 3px;
 }
 
@@ -289,4 +293,99 @@ footer p {
 
 #lastModified {
     text-align: center;
+}
+
+/*---------------------- join.html --------------------------*/
+main.join {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+main.join .form,
+main.join .table {
+    flex: 1 1 45%;
+    width: 100%;
+    table-layout: auto;
+}
+
+/*---------------------- table om join.html --------------------------*/
+table {
+    border: thin solid var(--lightgrey);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--black);
+    font-size: 1.1em;
+}
+
+tr:first-child th,
+tr:nth-child(2) th:first-child {
+    background-color: var(--grey-dark);
+    color: white;
+    border-color: var(--grey-dark);
+}
+
+th,
+td {
+    font-size: .8rem;
+    padding: 8px 10px;
+    border: 1px solid var(--midgrey);
+}
+
+tr:nth-child(2) th:not(:first-child) {
+    background-color: var(--red);
+    border-right: 1px solid var(--midgrey);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--lightgrey);
+}
+
+/*---------------------- Form on join.html --------------------------*/
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--grey-dark);
+    padding: .5rem 2%;
+
+}
+
+form legend {
+    color: var(--red);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    dolor: var(--grey-dark);
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+form label.top input {
+    --webkit-appearacne: none;
+    display: block;
+    background-color: var(--lightgrey);
+    font-size: 1rem;
+    border: 1px solid var(--midgrey);
+    padding: .75rem;
+    width: calc(100% - 1.5rem);
+    max-width: 20rem;
+    box-sizing: border-box;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: var(--grey-dark);
 }

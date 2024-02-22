@@ -13,4 +13,21 @@
         justify-content: center;
     }
 
+
+    /*
+=================
+=== JOIN PAGE ===
+=================
+*/
+
+
+    main.join {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 857px) {
+    main.join .table {
+        margin-top: 6rem;
+    }
 }

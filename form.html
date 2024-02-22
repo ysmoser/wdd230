@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuri Moser - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description"
+        content="Course assignment portal for BYUI WDD 230 - Web Frontend Development created by Yuri Moser." />
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Website Creation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/images/cache-valley.webp" />
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/" />
+    <meta property="og:description" content="BYUI WDD230 course assignment portal for Yuri Moser.">
+</head>
+
+<body>
+    <header>
+        <img src="images/yuri-moser.webp" alt="Yuri Moser BYUI WDD230" width="300" height="300">
+        <h1>Yuri Moser</h1>
+    </header>
+    <nav>
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <ul class="navigation">
+            <li><a href="https://ysmoser.github.io/wdd230/">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
+            <li><a href="chamber/" target="_blank">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYUI</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main class="feedback">
+        <h1>Page Feedback Form</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Feedback</legend>
+                <label class="top">User Name* <input type="text" id="uname" name="username" required></label>
+                <label class="top">Password* <input type="password" id="pword" name="password" [A-Za-z0-9]{8,}
+                        required></label>
+                <label class="top">Please Enter A Valid Email Address* <input type="email" id="email" name="email"
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byu.edu" required></label>
+                <label class="top">Page Rating
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                </label>
+            </fieldset>
+            <input type="submit" value="Send Feedback" class="submitBtn">
+        </form>
+
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span></p>
+            <p>Yuri Moser</p>
+            <p>United Sates of America</p>
+            <img src="images/usa-flag.webp" alt="an American flag">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/pagevisits.js"></script>
+</body>
+
+</html>
