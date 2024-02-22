@@ -355,7 +355,7 @@ tbody tr:nth-child(even) {
 fieldset {
     margin: 2rem 0;
     border: 1px solid var(--grey-dark);
-    padding: .5rem 2%;
+    padding: .5rem 2% 1.2rem;
 
 }
 
@@ -388,4 +388,8 @@ form label.sbs {
     display: block;
     padding: .75rem 0;
     color: var(--grey-dark);
+}
+
+.company-info #bizname {
+    margin: 0rem 0 1rem;
 }
