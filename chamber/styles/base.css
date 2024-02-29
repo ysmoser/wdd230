@@ -367,7 +367,7 @@ form legend {
 
 form label.top {
     display: block;
-    dolor: var(--grey-dark);
+    color: var(--grey-dark);
     padding-top: 1rem;
     font-size: .8rem;
 }
