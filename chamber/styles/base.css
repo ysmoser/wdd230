@@ -248,7 +248,7 @@ h2 {
 }
 
 .weather p {
-    text-align: center;
+    text-align: left;
 }
 
 /*---------------------- Lazy Loading --------------------------*/
