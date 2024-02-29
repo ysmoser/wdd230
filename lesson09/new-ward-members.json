@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+        "familyName": "Moser",
+        "moveInDate": "2023-11-22",
+        "numberOfPeople": 5,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Shawn Moser",
+                "gender": "Male",
+                "birthdate": "1970-12-20"
+            },
+            {
+                "name": "Yuri Moser",
+                "gender": "Female",
+                "birthdate": "1972-11-11"
+            },
+            {
+                "name": "Jonathan Moser",
+                "gender": "Male",
+                "birthdate": "2002-09-09"
+            },
+            {
+                "name": "Truman Moser",
+                "gender": "Male",
+                "birthdate": "2005-01-21"
+            },
+            {
+                "name": "Ryan Moser",
+                "gender": "Male",
+                "birthdate": "2008-04-16"
+            }
+        ]
+    }
+}
