@@ -10,7 +10,7 @@ async function getLinks() {
 getLinks();
 
 const displayLinks = (weeks) => {
-    const ul = document.querySelector('.homework');
+    const ul = document.querySelector('#homework');
     ul.innerHTML = '';
 
     weeks.forEach((week) => {
