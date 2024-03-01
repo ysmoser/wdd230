@@ -1,0 +1,138 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "https://codepen.io/ysmoser-the-looper/pen/ZEPpVWK",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/images/combinator-exercises.webp",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "https://codepen.io/ysmoser-the-looper/pen/eYXWdqB?editors=1100",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "https://codepen.io/ysmoser-the-looper/pen/rNRmyoL",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson03/chamber-site-plan.html",
+                    "title": "Wireframe"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/ysmoser-the-looper/pen/MWxONRX",
+                    "title": "Pseudo-classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson05/bom.html",
+                    "title": "Book of Mormon"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson06/images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson07/wk7bom.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson08/tablebuild.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "https://ysmoser.github.io/wdd230/form-start/index.html",
+                    "title": "Form"
+                },
+                {
+                    "url": "https://ysmoser.github.io/wdd230/form.html",
+                    "title": "Page Feedback"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "https://ysmoser.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}
