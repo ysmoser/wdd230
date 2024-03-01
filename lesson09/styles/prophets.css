@@ -1,0 +1,33 @@
+:root {
+    --pink: #e20b6d;
+    --lightgreen: #F3F7E7;
+    --black: #181818;
+}
+
+html {
+    background-color: var(--lightgreen);
+}
+
+body {
+    max-width: 1200px;
+    padding: 5px 30px;
+    margin: 0px auto;
+}
+
+h1 {
+    color: var(--pink);
+    font-size: 2.5rem;
+}
+
+div#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+#cards h2 {
+    margin-bottom: .5rem;
+}
