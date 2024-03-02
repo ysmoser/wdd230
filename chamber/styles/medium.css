@@ -123,12 +123,12 @@
         font-size: 1rem;
         padding: 10px 20px;
     }
+
+
 }
 
-@media (min-width: 542px) {
-
-    th,
-    td {
+@media (min-width: 542px){
+    th, td {
         font-size: 1.1rem;
     }
-}
+    }
