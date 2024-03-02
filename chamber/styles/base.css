@@ -466,7 +466,7 @@ input.submitBtn {
 .directory #members.list section {
     display: block;
     margin: 0;
-    padding: 0rem 0.25rem;
+    padding: 0.5rem 0.25rem;
 }
 
 .directory #members.list section>* {
