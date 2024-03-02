@@ -443,6 +443,7 @@ input.submitBtn {
     align-items: center;
 }
 
+.directory #members img,
 .directory .grid img {
     border: 1px solid #fff;
     background-color: #fff;
@@ -451,6 +452,7 @@ input.submitBtn {
     box-shadow: 0 0 10px var(--shadow);
 }
 
+.directory #members section>*,
 .directory .grid section>* {
     margin: 0.1rem;
 }
