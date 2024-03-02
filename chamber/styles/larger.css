@@ -24,6 +24,27 @@
     main.join {
         padding: 20px;
     }
+
+    /*
+======================
+=== DIRECTORY PAGE ===
+======================
+*/
+
+    .directory section h2 {
+        font-size: 1.1em;
+    }
+
+    .directory section p,
+    .directory section a {
+        font-size: .9em;
+    }
+
+    .directory .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
 }
 
 @media (min-width: 857px) {

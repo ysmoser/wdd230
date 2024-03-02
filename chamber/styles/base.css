@@ -403,3 +403,86 @@ input.submitBtn {
     color: white;
     margin-bottom: 2em;
 }
+
+/*-------------------- DIRECTORY PAGE ------------------------*/
+.directory main {
+    display: block;
+    padding: 0px 10px;
+    margin: 3rem auto;
+}
+
+.directory .menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: var(--green-light);
+    text-align: center;
+}
+
+.directory.menu button {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1em;
+    margin: .2rem;
+}
+
+
+
+.directory section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .8rem .3rem;
+    margin: .5rem;
+    background-color: var(--lightgrey);
+}
+
+.directory .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.directory .grid img {
+    border: 1px solid #fff;
+    background-color: #fff;
+    width: 6rem;
+    height: auto;
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+.directory .grid section>* {
+    margin: 0.1rem;
+}
+
+.directory .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.directory .list section {
+    display: block;
+    margin: 0;
+    padding: 0.erem 0.25rem;
+}
+
+.directory .list section>* {
+    margin: 0 1rem;
+}
+
+.directory .list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+.directory section h2 {
+    font-size: 1rem;
+}
+
+.directory section p,
+.directory section a {
+    font-size: .8em;
+}
+
+.list section:nth-child(even) {
+    background-color: #fff;
+}
