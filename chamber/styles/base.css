@@ -457,22 +457,23 @@ input.submitBtn {
     margin: 0.1rem;
 }
 
-.directory .list {
-    display: flex;
+.directory #members.list {
+    display: flex !important;
     flex-direction: column;
+    align-items: normal;
 }
 
-.directory .list section {
+.directory #members.list section {
     display: block;
     margin: 0;
-    padding: 0.erem 0.25rem;
+    padding: 0rem 0.25rem;
 }
 
-.directory .list section>* {
+.directory #members.list section>* {
     margin: 0 1rem;
 }
 
-.directory .list section img {
+.directory #members.list section img {
     display: none;
     /* smaller viewports only */
 }
