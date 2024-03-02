@@ -25,8 +25,8 @@ const displayCompany = (companies) => {
         icon.setAttribute('alt', `${company.name} Icon`);
         icon.setAttribute('src', company.imageurl);
         icon.setAttribute('loading', 'lazy');
-        icon.setAttribute('width', '200');
-        icon.setAttribute('height', '200');
+        icon.setAttribute('width', '150');
+        icon.setAttribute('height', '150');
 
         address.textContent = company.address;
         phone.textContent = company.phone;
