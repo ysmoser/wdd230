@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Alpine Restoration",
+            "address": "111 S Main St. Smithfield, UT",
+            "phone": "(435) 555-1111",
+            "url": "https://alpinecleaning.com/",
+            "imageurl": "images/icon-alpine.png",
+            "membership": "Gold",
+            "other": "Water damage Restoration & Mold Removal"
+        },
+        {
+            "name": "Beyond Fitness",
+            "address": "200 E 100 S. Logan, UT",
+            "phone": "(435) 333-7777",
+            "url": "https://beyondfitness.com/",
+            "imageurl": "images/icon-beyond.png",
+            "membership": "Bronze",
+            "other": "Personalized Fitness programs & Group Classes"
+        },
+        {
+            "name": "Clear Direction",
+            "address": "60 E Center St. Logan, UT",
+            "phone": "(435) 8886969",
+            "url": "https://cleardirection.com/",
+            "imageurl": "images/icon-clear.png",
+            "membership": "Silver",
+            "other": "Marriage Counseling"
+        },
+        {
+            "name": "Blue Water Health",
+            "address": "74 W. 100 N. Logan, UT",
+            "phone": "(435) 222-3333",
+            "url": "https://bluehealth.com/",
+            "imageurl": "images/icon-health.png",
+            "membership": "Bronze",
+            "other": "Health Insurance Agency"
+        },
+        {
+            "name": "Green Solar",
+            "address": "200 E 100 S. Logan, UT",
+            "phone": "(435) 333-7777",
+            "url": "https://greensolar.net/",
+            "imageurl": "images/icon-solar.png",
+            "membership": "Gold",
+            "other": "Solar Panel Installation"
+        },
+        {
+            "name": "Mountain Shower",
+            "address": "280 E 100 S Hyde Park, UT",
+            "phone": "(435) 999-7874",
+            "url": "https://mountainshower.net/",
+            "imageurl": "images/icon-shower.png",
+            "membership": "Gold",
+            "other": "Luxury Shower & Bath Fittings"
+        },
+        {
+            "name": "Kater Shop",
+            "address": "1050 Main Logan, UT",
+            "phone": "(435) 472-2312",
+            "url": "https://katershop.com/",
+            "imageurl": "images/icon-kater.png",
+            "membership": "Silver",
+            "other": "Men's Clothing & Accessory Store"
+        }
+    ]
+}
