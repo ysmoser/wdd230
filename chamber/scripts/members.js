@@ -1,3 +1,4 @@
+// Get JSON
 const baseURL = "https://ysmoser.github.io/wdd230/chamber/directory.html";
 const membersURL = "https://ysmoser.github.io/wdd230/chamber/data/members.json";
 const members = document.querySelector('#members');
@@ -47,3 +48,22 @@ const displayCompany = (companies) => {
         members.appendChild(member);
     });
 };
+
+// Grid and List toggles
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#members");
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
