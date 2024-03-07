@@ -125,8 +125,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "https://ysmoser.github.io/wdd230/lesson10/weather.html",
+                    "title": "Weather API Test"
                 },
                 {
                     "url": "",
