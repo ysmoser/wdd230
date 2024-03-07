@@ -1,7 +1,7 @@
 const tempDay = document.querySelector('#temp-day');
 const weatherCond = document.querySelector('#weather-forecast');
 
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=41.73&lon=-111.83&units=imperial&appid=8af9626bf1661ea0eedbcd82ab4f1be4';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=41.73&lon=-111.83&exclude=minutely,hourly,alerts&units=imperial&appid=8af9626bf1661ea0eedbcd82ab4f1be4';
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -26,34 +26,35 @@ function capEachWord(description) {
         .join(' ');
 }
 
-
 function displayResults(data) {
-    const currentForecast = data.list[0]; 
-    tempDay.innerHTML = `${Math.round(currentForecast.main.temp)}&deg;F`;
+    tempDay.innerHTML = `${Math.round(data.current.temp)}&deg;F`;
     const currentDesc = document.querySelector('#current-desc');
-    currentDesc.textContent = capEachWord(currentForecast.weather[0].description);
+    currentDesc.textContent = capEachWord(data.current.weather[0].description);
 
     weatherCond.innerHTML = '';
 
+    // The first 3 days 
+    const threeDays = data.daily.slice(0, 3); //this includes the second and the third day
 
-    const firstDayForecasts = data.list.slice(0, 8); 
+    threeDays.forEach(day => {
+        const date = new Date(day.dt * 1000);
+        const dailyTemp = `${Math.round(day.temp.day)}&deg;F`;
 
-    firstDayForecasts.forEach(forecast => {
-        const date = new Date(forecast.dt * 1000);
-        const temp = `${Math.round(forecast.main.temp)}&deg;F`;
 
-        const iconsrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
-        let desc = capEachWord(forecast.weather[0].description);
+        const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
+        let desc = capEachWord(day.weather[0].description);
+
 
         let weatherEl = document.createElement('figure');
         let dateEl = document.createElement('figcaption');
         dateEl.textContent = date.toDateString();
         let iconEl = document.createElement('img');
 
+
         iconEl.setAttribute('src', iconsrc);
         iconEl.setAttribute('alt', desc);
         let captionEl = document.createElement('figcaption');
-        captionEl.innerHTML = `${desc} - ${temp}`;
+        captionEl.innerHTML = `${desc} - ${dailyTemp}`;
 
         weatherEl.appendChild(dateEl);
         weatherEl.appendChild(iconEl);
