@@ -73,7 +73,7 @@ header {
 
 
 
-/*  Toggle Switch */
+/*----------------  Toggle Switch --------------------*/
 
 .switch {
     position: absolute;
@@ -129,7 +129,7 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-/*  this is the end of toggle switch */
+/*--------------  this is the end of toggle switch ------------------*/
 
 
 
@@ -251,6 +251,39 @@ h2 {
     text-align: left;
 }
 
+.spot-3 {
+    text-align: center;
+    padding: 1rem 10px;
+    background: var(--lightgrey);
+}
+
+.spot-3 h2 {
+    text-align: center;
+    color: var(--red);
+}
+
+.spot-3 p {
+    color: var(--grey-dark);
+}
+
+#meetAndGreet {
+    position: relative;
+}
+
+#meet-greet::after {
+    content: "❌";
+    font-size: 20px;
+}
+
+#meet-greet {
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: none;
+    cursor: pointer;
+}
+
 /*---------------------- Lazy Loading --------------------------*/
 
 .disc-img figure {
@@ -295,7 +328,7 @@ footer p {
     text-align: center;
 }
 
-/*---------------------- join.html --------------------------*/
+/*---------------------- JOIN PAGE --------------------------*/
 main.join {
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +343,7 @@ main.join .table {
     table-layout: auto;
 }
 
-/*---------------------- table om join.html --------------------------*/
+/*---------------------- table om JOIN PAGE --------------------------*/
 table {
     border: thin solid var(--lightgrey);
     box-shadow: 0 0 10px var(--shadow);
@@ -351,7 +384,7 @@ tbody tr:nth-child(even) {
     background-color: var(--lightgrey);
 }
 
-/*---------------------- Form on join.html --------------------------*/
+/*---------------------- Form on JOIN PAGE --------------------------*/
 fieldset {
     margin: 2rem 0;
     border: 1px solid var(--grey-dark);
