@@ -1,7 +1,8 @@
 @media (min-width: 981px) {
 
     .hero .headings h1 {
-        font-size: 2.5em;
+        font-size: 3.5em;
+        padding: 1.1rem 20px;
     }
 
     .headings button.cta {
