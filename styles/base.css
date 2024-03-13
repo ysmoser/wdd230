@@ -209,8 +209,6 @@ section.card2 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: normal; */
-    /* text-align: center; */
 }
 
 iframe {
