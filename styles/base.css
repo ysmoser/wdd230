@@ -200,7 +200,8 @@ section p {
 }
 
 .card2 img {
-    width: 5rem;
+    width: 50px;
+    height: auto;
 }
 
 section.card2 figure {

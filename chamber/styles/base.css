@@ -300,6 +300,27 @@ h2 {
     display: block;
 }
 
+/*------------------------- WEATHER ------------------------*/
+.day-forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#dayofweek1,
+#dayofweek2,
+#dayofweek3 {
+    grid-column: 1/2;
+}
+
+#forecast1,
+#forecast2,
+#forecast3 {
+    grid-column: 2/3;
+}
+
+
 /*-------------------- HOME PAGE SPOTLIGHT ----------------*/
 div#spotlights {
     display: grid;
