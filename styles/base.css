@@ -78,6 +78,7 @@ nav {
     font-size: 1.3em;
     font-weight: 200;
     text-decoration: none;
+    transition: all .3sec ease-in-out;
 }
 
 nav ul li a:hover {
