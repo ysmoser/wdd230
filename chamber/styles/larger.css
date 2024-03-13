@@ -53,3 +53,20 @@
         margin-top: 6rem;
     }
 }
+
+/*
+ ============================== 
+ ==== HOME PAGE SPOTLIGHT =====
+ ==============================
+ */
+@media (min-width: 700px) {
+    div#spotlights {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div#spotlights img {
+        width: 50%;
+    }
+
+
+}
