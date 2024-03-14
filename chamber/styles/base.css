@@ -171,6 +171,14 @@ nav {
     content: "❌";
 }
 
+nav ul li a:hover {
+    color: gray;
+}
+
+.navigation a:active {
+    color: var(--red);
+}
+
 /*  Logo */
 nav img {
     width: 50px;
@@ -205,9 +213,7 @@ ul.navigation {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: gray;
-}
+
 
 /* when clicked, the class ".open" will be added by Javascript. The css for .open as follows. */
 .open li {
