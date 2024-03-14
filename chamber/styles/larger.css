@@ -18,7 +18,8 @@
         justify-content: center;
     }
 
-    .home-page h2 {
+    .home-page h2,
+    .join .form h2 {
         font-size: 1.8rem;
     }
 

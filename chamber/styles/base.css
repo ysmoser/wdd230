@@ -409,6 +409,10 @@ main.join .table {
     table-layout: auto;
 }
 
+.join .form h2 {
+    font-size: 2em;
+    color: var(--grey-dark);
+}
 /*---------------------- table om JOIN PAGE --------------------------*/
 table {
     border: thin solid var(--lightgrey);
