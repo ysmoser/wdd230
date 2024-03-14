@@ -15,7 +15,7 @@ body {
 /* Colors */
 
 :root {
-    --red: #ff4400;
+    --red: #DB3A00;
     --green-light: #e7edde;
     --green-dark: #3D4C29;
     --grey-dark: #2A2E30;
@@ -413,6 +413,7 @@ main.join .table {
     font-size: 2em;
     color: var(--grey-dark);
 }
+
 /*---------------------- table om JOIN PAGE --------------------------*/
 table {
     border: thin solid var(--lightgrey);
