@@ -5,6 +5,10 @@
         padding: 1.1rem 20px;
     }
 
+    .home-page .hero .headings h1 {
+        font-size: 2.5rem;
+    }
+
     .headings button.cta {
         font-size: 1em;
     }
@@ -16,6 +20,21 @@
 
     .home-page h2 {
         font-size: 1.8rem;
+    }
+
+    .events p,
+    .spot-3 p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .spot-3 p {
+        margin: 0 0 0.5rem;
+    }
+
+    .weather p {
+        font-size: 1.2rem;
+        line-height: 1rem;
     }
 
     /*

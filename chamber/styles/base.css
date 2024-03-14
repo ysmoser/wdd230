@@ -61,6 +61,9 @@ header {
     text-align: center;
 }
 
+.home-page .hero .headings h1 {
+    font-size: 1.5rem;
+}
 
 .headings .cta {
     margin-top: 1.5rem;
@@ -244,6 +247,7 @@ h2 {
     font-size: 1.3rem;
     color: var(--red);
     text-align: left;
+    line-height: 1.8rem;
 }
 
 .weather {
@@ -268,6 +272,11 @@ h2 {
 
 .spot-3 p {
     color: var(--grey-dark);
+}
+
+.events p,
+.spot-3 p {
+    line-height: 1.4rem;
 }
 
 #meetAndGreet {
@@ -322,6 +331,13 @@ h2 {
 #forecast2,
 #forecast3 {
     grid-column: 2/3;
+}
+
+p#dayofweek1,
+p#forecast1,
+p#dayofweek2,
+p#forecast2 {
+    margin-bottom: 5px;
 }
 
 

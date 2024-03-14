@@ -5,6 +5,10 @@
         padding: .5rem 20px;
     }
 
+    .home-page .hero .headings h1 {
+        font-size: 2rem;
+    }
+
     .headings button.cta {
         font-size: 0.9em;
     }
