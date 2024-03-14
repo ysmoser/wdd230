@@ -175,7 +175,7 @@ nav ul li a:hover {
     color: gray;
 }
 
-.navigation a:active {
+.navigation a.current-page {
     color: var(--red);
 }
 
