@@ -176,7 +176,7 @@ nav ul li a:hover {
 }
 
 .navigation a.current-page {
-    color: var(--red);
+    color: var(--green-light);
 }
 
 /*  Logo */
