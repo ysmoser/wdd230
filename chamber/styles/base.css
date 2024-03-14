@@ -514,7 +514,7 @@ input.submitBtn {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: var(--green-light);
+    background-color: var(--green-dark);
     text-align: center;
 }
 
@@ -525,7 +525,19 @@ input.submitBtn {
     margin: .2rem;
 }
 
+.directory .menu {
+    background-color: var(--green-dark);
+}
 
+button#grid,
+button#list {
+    background-color: white;
+}
+
+button#grid:hover,
+button#list:hover {
+    background-color: var(--midgrey);
+}
 
 .directory section {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -534,6 +546,7 @@ input.submitBtn {
     background-color: var(--lightgrey);
 }
 
+/*-------------------- class names "grid" or "list" will be added on click by js codes ------------------------*/
 .directory #members,
 .directory .grid {
     display: grid;
