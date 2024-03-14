@@ -19,7 +19,7 @@ body {
     --green-light: #e7edde;
     --green-dark: #3D4C29;
     --grey-dark: #2A2E30;
-    --lightgrey: hsla(0, 0%, 93%, 1);
+    --lightgrey: rgb(243, 243, 243);
     --midgrey: hsla(0, 0%, 70%, 1);
     --shadow: hsl(0, 0%, 50%);
     --zebra: hsla(0, 0%, 70%, 1);
