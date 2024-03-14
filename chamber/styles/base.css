@@ -257,7 +257,7 @@ h2 {
 }
 
 .weather {
-    background-color: var(--green-light);
+    background-color: var(--lightgrey);
     padding: 20px 50px;
 }
 
@@ -273,11 +273,11 @@ h2 {
 
 .spot-3 h2 {
     text-align: center;
-    color: var(--red);
+    color: white;
 }
 
 .spot-3 p {
-    color: var(--grey-dark);
+    color: white;
 }
 
 .events p,
