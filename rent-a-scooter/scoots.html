@@ -4,16 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>~Scoots~</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description"
+        content="~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <link rel="icon" href="fav-scoots.png">
+    <meta property="og:title" content="Cache Valley Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/chamber/images/cache-valley.webp">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/chamber/">
+    <meta property="og:description" content="Cache Chamber of Commerce">
+</head>
 </head>
 
 <body>
-    <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button onclick="closeMessage()">❌</button></div>
+    <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button onclick="closeMessage()">❌</button>
+    </div>
+
+    <p>~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the
+        western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter
+        enthusiasts, and cruise-based touring groups and partnerships. With two physical rental locations on Cozumel,
+        one near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other near Terminal Puerta
+        Maya, ~Scoots~ offers friendly and easy-to-rent services of motor scooters, jeeps, and side-by-sides ATVs.
+        Explore Cozumel with ease and enjoy the breathtaking beauty of this Caribbean paradise with ~Scoots~."</p>
+
     <div id="weather-app">
+        <h4 id="todays-weather-label">Today's Weather Is:</h4>
         <div id="current-temp">Loading current temperature...</div>
+
+        <h4 id="tomorrows-forecast-label">Tomorrow's Forecast Is :</h4>
         <div id="forecast">
-            <div id="dayofweek1"></div>
-            <div id="forecast1"></div>
+            <div id="dayofweek1">Day of Week</div>
+            <div id="forecast1">Temperature</div>
         </div>
     </div>
     <div>Humidity: <span id="humidity"></span>%</div>

@@ -1,24 +1,34 @@
-const apiKey = '8af9626bf1661ea0eedbcd82ab4f1be4';
-
-// API fetch 
-async function fetchWeatherData(apiUrl) {
+// Fetch current weather
+async function fetchCurrentWeather() {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=20.50&lon=-86.94&units=imperial&appid=8af9626bf1661ea0eedbcd82ab4f1be4`;
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(url);
         if (!response.ok) throw new Error(await response.text());
         const data = await response.json();
-        return data;
+        displayCurrentWeather(data, '#current-temp');
     } catch (error) {
-        console.error('Failed to fetch weather data:', error);
-        return null;
+        console.error('Failed to fetch current weather:', error);
     }
 }
 
-// Capitalize 
+// Fetch weather forecast
+async function fetchForecast() {
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=20.50&lon=-86.94&units=imperial&appid=8af9626bf1661ea0eedbcd82ab4f1be4`;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(await response.text());
+        const data = await response.json();
+        displayOneDayForecast(data, '#forecast');
+    } catch (error) {
+        console.error('Failed to fetch forecast:', error);
+    }
+}
+
+
 function capitalizeEachWord(description) {
     return description
-        .toLowerCase()
         .split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
         .join(' ');
 }
 
@@ -38,62 +48,54 @@ function displayCurrentWeather(data, containerId) {
 
 
 // Display one-day forecast
-function displayOneDayForecast(data, containerPrefix) {
-    // Assuming you want the forecast for the next occurrence of 15:00:00
+function displayOneDayForecast(data) {
     const forecast = data.list.find(x => x.dt_txt.includes('15:00:00'));
     if (forecast) {
-        const dayOfWeek = new Date(forecast.dt_txt).toLocaleDateString('en-US', { weekday: 'short' });
+        const dateParts = forecast.dt_txt.split(/[- :]/);
+        const year = parseInt(dateParts[0], 10);
+        const month = parseInt(dateParts[1], 10) - 1; // Month is 0-indexed
+        const day = parseInt(dateParts[2], 10);
+
+        const forecastDate = new Date(year, month, day);
+        const dayOfWeek = forecastDate.toLocaleDateString('en-US', { weekday: 'short' });
         const temp = `${Math.round(forecast.main.temp_max)}°F`;
 
-        // Assuming containerPrefix includes the '#' symbol or any other selector prefix
-        document.querySelector(`${containerPrefix}dayofweek1`).textContent = dayOfWeek;
-        document.querySelector(`${containerPrefix}forecast1`).textContent = temp;
-    } 
+        const dayOfWeekElement = document.querySelector('#dayofweek1');
+        const tempElement = document.querySelector('#forecast1');
+
+        if (dayOfWeekElement && tempElement) {
+            dayOfWeekElement.textContent = dayOfWeek;
+            tempElement.textContent = temp;
+        } else {
+            console.error('One or more elements could not be found:', dayOfWeekElement, tempElement);
+        }
+    }
 }
 
 
-// Helper function to create and append weather condition elements
-function createWeatherElement(weatherItem, parentElement) {
-    const main = weatherItem.main; 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherItem.icon}.png`; 
-    let desc = capitalizeEachWord(weatherItem.description); 
 
-    const mainEl = document.createElement('div');
-    mainEl.textContent = main; 
 
-    const descEl = document.createElement('div');
-    descEl.textContent = desc; 
+function createWeatherElement(event, parentElement) {
+    const iconsrc = `https://openweathermap.org/img/w/${event.icon}.png`;
+    let desc = capitalizeEachWord(event.description);
 
     let weatherEl = document.createElement('figure');
     let iconEl = document.createElement('img');
     let captionEl = document.createElement('figcaption');
 
-    iconEl.src = iconsrc; 
-    iconEl.alt = desc; 
-    captionEl.textContent = desc; 
+    iconEl.src = iconsrc;
+    iconEl.alt = desc;
+    captionEl.textContent = desc;
 
-    weatherEl.appendChild(mainEl); 
-    weatherEl.appendChild(iconEl); 
-    weatherEl.appendChild(captionEl); 
+    weatherEl.appendChild(iconEl);
+    weatherEl.appendChild(captionEl);
     parentElement.appendChild(weatherEl);
 }
-
 
 // Close the high temp message
 function closeMessage() {
     document.querySelector('#high-temp-message').style.display = 'none';
 }
 
-/*
-// Example usage
-const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=${apiKey}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=41.73&lon=-111.83&units=imperial&appid=${apiKey}`;
-
-fetchWeatherData(currentWeatherUrl).then(data => {
-    if (data) displayCurrentWeather(data, '#current-temp');
-});
-
-fetchWeatherData(forecastUrl).then(data => {
-    if (data) displayThreeDayForecast(data, '#');
-});
-*/
+fetchCurrentWeather();
+fetchForecast();
