@@ -1,0 +1,25 @@
+@media (min-width: 620px) {
+
+
+    /*
+========================================
+============== Attributions ============
+========================================
+*/
+    .attributions .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill minmax(600px 1fr));
+        padding: 10px;
+    }
+
+    .attributions .grid-item {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .attributions figure img {
+        width: 50%;
+        height: auto;
+    }
+}

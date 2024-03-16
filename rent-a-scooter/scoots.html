@@ -7,7 +7,7 @@
     <title>~Scoots~</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
     <meta name="author" content="Yuri Moser">
     <meta name="description"
         content="~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
@@ -21,32 +21,68 @@
 </head>
 
 <body>
-    <nav></nav>
+    <nav>
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <img src="images/cache-chamber-logo.png" alt="Cache Chamber logo">
+        <ul class="navigation">
+            <li><a href="#" id="home-link" class="current-page">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <header>
         <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button
                 onclick="closeMessage()">❌</button>
         </div>
     </header>
     <main>
-        <p>~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the
-            western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter
-            enthusiasts, and cruise-based touring groups and partnerships. With two physical rental locations on
-            Cozumel,
-            one near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other near Terminal Puerta
-            Maya, ~Scoots~ offers friendly and easy-to-rent services of motor scooters, jeeps, and side-by-sides ATVs.
-            Explore Cozumel with ease and enjoy the breathtaking beauty of this Caribbean paradise with ~Scoots~."</p>
-
-        <div id="weather-app">
-            <h4 id="todays-weather-label">Today's Weather Is:</h4>
-            <div id="current-temp">Loading current temperature...</div>
-
-            <h4 id="tomorrows-forecast-label">Tomorrow's Forecast Is :</h4>
-            <div id="forecast">
-                <div id="dayofweek1">Day of Week</div>
-                <div id="forecast1">Temperature</div>
+        <section class="home-info">
+            <p>~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in
+                the
+                western Caribbean Sea. This owner-operator company caters to locals, walk-in tourists, motor scooter
+                enthusiasts, and cruise-based touring groups and partnerships. With two physical rental locations on
+                Cozumel,
+                one near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other near Terminal
+                Puerta
+                Maya, ~Scoots~ offers friendly and easy-to-rent services of motor scooters, jeeps, and side-by-sides
+                ATVs.
+                Explore Cozumel with ease and enjoy the breathtaking beauty of this Caribbean paradise with ~Scoots~."
+            </p>
+        </section>
+        <section class="home-services">
+            <div class="home-blurb">
+                <img src="" alt="">
+                <h3>Honda Motor Scooters</h3>
+                <p>Honda Metropolitan (49cc)</p>
+                <P>Honda Dio (110cc):</P>
+                <p>Honda PCX150 (149cc)</p>
             </div>
-        </div>
-        <div>Humidity: <span id="humidity"></span>%</div>
+            <div class="home-blurb">
+                <img src="" alt="">
+                <h3>Side-by-Side ATVs</h3>
+                <p>Honda Pioneer 1000</p>
+            </div>
+            <div class="home-blurb">
+                <img src="" alt="">
+                <h3>Jeeps</h3>
+                <p>Jeep Wrangler - 4 door</p>
+                <P>eep Wrangler - 2 door</P>
+            </div>
+        </section>
+        <section class="weather">
+            <div id="weather-app">
+                <h4 id="todays-weather-label">Today's Weather Is:</h4>
+                <div id="current-temp">Loading current temperature...</div>
+
+                <h4 id="tomorrows-forecast-label">Tomorrow's Forecast Is :</h4>
+                <div id="forecast">
+                    <div id="dayofweek1">Day of Week</div>
+                    <div id="forecast1">Temperature</div>
+                </div>
+            </div>
+            <div>Humidity: <span id="humidity"></span>%</div>
+        </section>
     </main>
     <footer></footer>
     <script src="scripts/weather.js"></script>
