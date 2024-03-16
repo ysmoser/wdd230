@@ -2,6 +2,7 @@ const currentDate = Date.now();
 const visitsDisplay = document.querySelector("#last");
 let lastVisit = window.localStorage.getItem("lastVisit-ws");
 
+if (lastVisit) {
 lastVisit = Number(lastVisit); // Convert lastVisit to a number
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const daysSinceLastVisit = Math.floor((currentDate - lastVisit) / millisecondsPerDay);
@@ -13,6 +14,10 @@ if (daysSinceLastVisit <= 0) {
 } else {
     visitsDisplay.textContent = `You last visited ${daysSinceLastVisit} days ago.`;
 }
+} else {
+    // Handle the first visit case
+    visitsDisplay.textContent = 'Welcome to our site! This looks like your first visit.';
+}
 
-localStorage.setItem('lastVisit-ws', currentDate.toString());
+localStorage.setItem('lastVisit-ws', currentDate); 
 
