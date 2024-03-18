@@ -1,10 +1,75 @@
 @media (min-width: 620px) {
 
+    /*------------------------- GENERAL ------------------------*/
+
+    /* Navigation */
+    button#menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        margin: 0px auto;
+        justify-content: end;
+        max-width: 1600px;
+        padding-bottom: 20px;
+    }
+
+    .navigation li {
+        display: block;
+        padding-right: 15px;
+    }
+
+    .navigation li a {
+        font-size: 1.1em;
+    }
+
+    /*  Logo */
+    nav img {
+        width: 10rem;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*------------------------- HOME HERO SECTION ------------------------*/
+
+    .headings {
+        padding: 40px;
+    }
+
+    .headings h1 {
+        font-size: 40px;
+    }
+
+    .headings p {
+        font-size: 18px;
+    }
+
+    .headings button.cta {
+        font-size: 20px;
+        padding: .9em 2em;
+        margin-top: 20px;
+    }
+
+    /* ---------------------- HOME PAGE COMPANY DESCRIPTIONS ------------------------*/
+
+    p.home-desc {
+        font-size: 16px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
 
     /*
-========================================
-============== Attributions ============
-========================================
+=======================
+===== ATTRIBUTIONS ====
+=======================
 */
     .attributions .grid-container {
         display: grid;

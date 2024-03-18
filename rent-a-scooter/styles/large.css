@@ -1,2 +1,47 @@
 @media (min-width: 981px) {
+
+    nav img {
+        padding-top: 0px;
+    }
+
+    nav {
+        padding: 20px 10px 10px;
+    }
+
+    .navigation li a {
+        font-size: 1.3em;
+        padding-left: 5px;
+    }
+
+    /*------------------------- HOME HERO SECTION ------------------------*/
+
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .headings {
+        padding: 50px;
+    }
+
+    .headings h1 {
+        font-size: 60px;
+    }
+
+    .headings p {
+        font-size: 25px;
+    }
+
+    .headings button.cta {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    /* ---------------------- HOME PAGE COMPANY DESCRIPTIONS ------------------------*/
+
+    p.home-desc {
+        font-size: 18px;
+    }
+
+
 }

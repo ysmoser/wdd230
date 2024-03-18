@@ -12,34 +12,44 @@ body {
     vertical-align: baseline;
 }
 
-main {
-    padding: 10px 15px;
-}
-
-/* Colors */
+/*----------------------- GENERAL ---------------------*/
 
 :root {
-    --red: #DB3A00;
-    --green-light: #e7edde;
-    --green-dark: #3D4C29;
-    --grey-dark: #2A2E30;
+    --red: #DB0048;
+    --green-light: #e5ffef;
+    --green-dark: #00792d;
+    --turq-light: #e6fffb;
+    --turq-dark: #027f6e;
+    --yellow-dark: #ffbf00;
+    --yellow-light: #fff9e5;
+    --purple-dark: #9065b0;
+    --grey-dark: #e7fefb;
     --lightgrey: rgb(243, 243, 243);
     --midgrey: hsla(0, 0%, 70%, 1);
     --shadow: hsl(0, 0%, 50%);
     --zebra: hsla(0, 0%, 70%, 1);
 }
 
-/* 
-================
-===Navigation===
-================
- */
+h3 {
+    font-size: 14px;
+    margin: 0;
+    padding: .8em 0 .3em;
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+
+/*----------------------- Navigation -------------------------*/
 
 
 nav {
     position: relative;
     display: flex;
-    padding: 5px 10px 10px;
+    padding: 5px 0px 10px;
     justify-content: space-between;
 }
 
@@ -68,14 +78,21 @@ nav ul li a:hover {
 }
 
 .navigation a.current-page {
-    color: var(--midgrey);
+    color: white;
+    background: var(--turq-dark);
+    padding: 5px;
+    border: none;
 }
 
 /*  Logo */
 nav img {
-    width: 100px;
+    width: 8rem;
     height: auto;
     padding: 10px 0 10px 10px;
+}
+
+img#logo.open {
+    display: none;
 }
 
 .navigation {
@@ -99,7 +116,7 @@ ul.navigation {
 }
 
 .navigation li a {
-    color: white;
+    color: black;
     font-size: 1.3em;
     font-weight: 200;
     text-decoration: none;
@@ -125,11 +142,21 @@ ul.navigation {
     text-align: center;
 }
 
-/* 
-==============
-=== Header ===
-==============
- */
+/*----------------------------- HIGHT TEMP ABOVE HERO SECTION ------------------------------*/
+#high-temp-message {
+    background-color: var(--turq-light);
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+#high-temp-message button {
+    margin-left: 15px;
+    background-color: black;
+    border: none;
+}
+
+/* ------------------------------------ HEADINGS ------------------------------------*/
 
 /*  To remove the unwanted gap between the hero and nav I added the bg color to match the nave */
 header {
@@ -151,7 +178,7 @@ header {
     bottom: 5%;
     right: 5%;
     text-align: center;
-    padding: 8px 5px;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -160,6 +187,7 @@ header {
     color: white;
     font-size: 20px;
     text-align: center;
+    letter-spacing: 0.2em;
 }
 
 .headings p {
@@ -169,27 +197,45 @@ header {
 }
 
 .headings .cta {
-    margin-top: 3px;
-    background-color: var(--red);
-    color: white;
+    margin-top: 10px;
+    background-color: var(--yellow-dark);
+    color: black;
     font-size: 14px;
     padding: .8em 1.5em;
     border: none;
 }
 
-/*
-=============
-=== Footer=== 
-=============
-*/
+/* ---------------------- CONTACT INFO ON HOME PAGE BELOW HERO SECTION ------------------------*/
+.home-contacts div {
+    text-align: center;
+    padding: .5em 1em;
+    background-color: white;
+}
+
+.home-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    padding: 20px;
+    background-color: var(--turq-dark)
+}
+
+/* ---------------------- HOME PAGE COMPANY DESCRIPTIONS ------------------------*/
+
+p.home-desc {
+    padding: 20px;
+    font-size: 14px;
+}
+
+/*--------------------------------- Footer -------------------------------*/
 
 footer {
-    background-color: var(--grey-dark);
+    background-color: var(--turq-light);
     padding: 30px 3px;
 }
 
 footer p {
-    color: white;
+    color: black;
     margin: 5px;
 }
 
