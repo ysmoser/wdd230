@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap')
+
+/* Normalization */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* Colors */
+
+:root {
+    --red: #DB3A00;
+    --green-light: #e7edde;
+    --green-dark: #3D4C29;
+    --grey-dark: #2A2E30;
+    --lightgrey: rgb(243, 243, 243);
+    --midgrey: hsla(0, 0%, 70%, 1);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: hsla(0, 0%, 70%, 1);
+}
+
+/* 
+================
+===Navigation===
+================
+ */
+
+
+ nav {
+    background-color: var(--grey-dark);
+    position: relative;
+    display: flex;
+    padding: 5px 10px 10px;
+    justify-content: space-between;
+}
+
+#menu {
+    font-size: 2rem;
+    padding: 3px 7px 6px;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+.navigation a.current-page {
+    color: var(--midgrey);
+}
+
+/*  Logo */
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.navigation {
+    background-color: var(--grey-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 30px;
+    margin-top: 0px;
+}
+
+ul.navigation {
+    list-style: none;
+    flex: 1;
+    margin: 0px;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+    padding-bottom: 10px;
+}
+
+.navigation li a {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
+
+/* when clicked, the class ".open" will be added by Javascript. The css for .open as follows. */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.open li:last-child a {
+    padding-bottom: 0px;
+}
+
+.navigation.open {
+    text-align: center;
+}
+
+/* 
+==============
+=== Header ===
+==============
+ */
+
+/*  To remove the unwanted gap between the hero and nav I added the bg color to match the nave */
+header {
+    background-color: var(--grey-dark);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.headings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headings h1 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.home-page .hero .headings h1 {
+    font-size: 1.5rem;
+}
+
+.headings .cta {
+    margin-top: 1.5rem;
+    background-color: var(--red);
+    color: white;
+    font-size: 15.5px;
+    padding: .8em 1.5em;
+    border: none;
+}
+
+/*
+=============
+=== Footer=== 
+=============
+*/
+
+footer {
+    background-color: var(--grey-dark);
+    padding: 30px 3px;
+}
+
+footer p {
+    color: white;
+    margin: 5px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lastModified {
+    text-align: center;
+}

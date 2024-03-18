@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description"
+        content="~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <link rel="icon" href="fav-scoots.png">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/rent-a-scooter/images/riding-scooter-fb.webp">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/rent-a-scooter/scoots.html">
+    <meta property="og:description" content="Scoots">
+</head>
+</head>
+
+<body>
+    <nav>
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <img src="images/scoots-logo.png" alt="~Scoots~ logo">
+        <ul class="navigation">
+            <li><a href="#" id="home-link" class="current-page">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button
+                onclick="closeMessage()">❌</button>
+        </div>
+    </header>
+    <main>
+        <div class="table">
+            <table>
+                <caption>~Scoots~ Rental Pricing</caption>
+                <thead>
+                    <tr>
+                        <th colspan="6" scope="colgroup">Our Rental Pricing</th>
+                    </tr>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">Reservation</th>
+                        <th scope="col">Walk-In</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rental Type</td>
+                        <td>Max. Persons</td>
+                        <td>Half Day<br> (3 hrs)</td>
+                        <td>Full Day</td>
+                        <td>Half Day<br> (3 hrs)</td>
+                        <td>Full Day</td>
+                    </tr>
+                    <tr id="max-prices">
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span> Yuri Moser </p>
+            <p>BYUI WDD230</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
