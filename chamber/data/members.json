@@ -13,7 +13,7 @@
             "name": "Beyond Fitness",
             "address": "200 E 100 S. Logan, UT",
             "phone": "(435) 333-7777",
-            "url": "https://beyondfitness.com/",
+            "url": "https://beyondfitness.coach/",
             "imageurl": "images/icon-beyond.png",
             "membership": "Bronze",
             "other": "Personalized Fitness programs & Group Classes"
@@ -22,7 +22,7 @@
             "name": "Clear Direction",
             "address": "60 E Center St. Logan, UT",
             "phone": "(435) 8886969",
-            "url": "https://cleardirection.com/",
+            "url": "https://www.facebook.com/Cleardirectioncounseling/",
             "imageurl": "images/icon-clear.png",
             "membership": "Silver",
             "other": "Marriage Counseling"
@@ -31,25 +31,25 @@
             "name": "Blue Water Health",
             "address": "74 W. 100 N. Logan, UT",
             "phone": "(435) 222-3333",
-            "url": "https://bluehealth.com/",
+            "url": "https://bluewaterhealthinsurance.com/",
             "imageurl": "images/icon-health.png",
             "membership": "Bronze",
             "other": "Health Insurance Agency"
         },
         {
-            "name": "Green Solar",
+            "name": "Laligra Solar",
             "address": "200 E 100 S. Logan, UT",
             "phone": "(435) 333-7777",
-            "url": "https://greensolar.net/",
+            "url": "https://laligra.com/",
             "imageurl": "images/icon-solar.png",
             "membership": "Gold",
             "other": "Solar Panel Installation"
         },
         {
-            "name": "Mountain Shower",
+            "name": "Shadow Mountain Shower",
             "address": "280 E 100 S Hyde Park, UT",
             "phone": "(435) 999-7874",
-            "url": "https://mountainshower.net/",
+            "url": "https://shadowmountainshowers.com/",
             "imageurl": "images/icon-shower.png",
             "membership": "Gold",
             "other": "Luxury Shower & Bath Fittings"

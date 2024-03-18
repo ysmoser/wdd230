@@ -1,0 +1,52 @@
+{
+    "prices": [
+        {
+            "name": "Honda Metro Scooter",
+            "persons": "1",
+            "halfday": "$20",
+            "fullday": "$30",
+            "wkin-half": "$25",
+            "wkin-full": "35"
+        },
+        {
+            "name": "Honda Dio Scooter",
+            "persons": "2",
+            "halfday": "$30",
+            "fullday": "$40",
+            "wkin-half": "$35",
+            "wkin-full": "45"
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "persons": "2",
+            "halfday": "$40",
+            "fullday": "$50",
+            "wkin-half": "$45",
+            "wkin-full": "55"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "persons": "4",
+            "halfday": "$50",
+            "fullday": "$70",
+            "wkin-half": "$60",
+            "wkin-full": "80"
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "persons": "5",
+            "halfday": "$70",
+            "fullday": "$100",
+            "wkin-half": "$85",
+            "wkin-full": "125"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "persons": "4",
+            "halfday": "$60",
+            "fullday": "$85",
+            "wkin-half": "$70",
+            "wkin-full": "90"
+        }
+    ]
+}
