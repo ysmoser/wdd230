@@ -1,41 +1,42 @@
 // Get JSON
 const pricesURL = "https://ysmoser.github.io/wdd230/rent-a-scooter/data/prices.json";
-const prices = document.querySelector('#max-prices');
+const pricesTable = document.querySelector('.table tbody');
 
-async function getPricess() {
+async function getPrices() {
     const response = await fetch(pricesURL);
     const data = await response.json();
-    displayCompany(data);
+    displayCompany(data.prices);
 }
 
-const displayCompany = (data) => {
-    data.forEach((price) => {
+const displayCompany = (pricesArray) => {
+    pricesArray.forEach((price) => {
+        // Create a new row for each set of price data
+        let row = document.createElement('tr');
 
         let product = document.createElement('td');
-        let persons = document.createElement('td');
+        //let persons = document.createElement('td');
         let halfday = document.createElement('td');
         let fullday = document.createElement('td');
         let wkinHalf = document.createElement('td');
         let wkinFull = document.createElement('td');
 
-       product.textContent = price.name;
-       persons.textContent = price.persons;
-       halfday.textContent = price.halfday;
-       fullday.textContent = price.fullday;
-       wkinHalf.textContent = price.wkin-half;
-       wkinFull.textContent = price.wkin-full;
+        product.textContent = price.name;
+        //persons.textContent = price.persons;
+        halfday.textContent = price.halfday;
+        fullday.textContent = price.fullday;
+        wkinHalf.textContent = price['wkin-half'];
+        wkinFull.textContent = price['wkin-full'];
 
-        cost.appendChild(product);
-        cost.appendChild(persons);
-        cost.appendChild(halfday);
-        cost.appendChild(fullday);
-        cost.appendChild(wkinHalf);
-        cost.appendChild(wkinFull);
+        row.appendChild(product);
+        //row.appendChild(persons);
+        row.appendChild(halfday);
+        row.appendChild(fullday);
+        row.appendChild(wkinHalf);
+        row.appendChild(wkinFull);
 
-
-
-        prices.appendChild(cost);
+        // Append the new row to the table body
+        pricesTable.appendChild(row);
     });
 }
 
-getPricess();
+getPrices(); 

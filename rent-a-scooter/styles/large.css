@@ -77,12 +77,14 @@
 
     /* --------------------------------- HOME PAGE BLURBS --------------------------------*/
 
-    .home-blurb img {
+    .home-blurb img,
+    .rentals-blurb img {
         width: 60%;
         margin-bottom: 2rem;
     }
 
-    .home-blurb h4 {
+    .home-blurb h4,
+    .rentals-blurb h4 {
         margin-bottom: 1rem;
     }
 
@@ -106,6 +108,39 @@
 
     .weather-2cols {
         padding: 30px 20px;
+    }
+
+
+    /*
+=======================
+===== RENTALS PAGE ====
+=======================
+*/
+
+    /* --------------------------------- BLURBS --------------------------------*/
+
+    .rentals main {
+        padding: 50px 0px 50px;
+        margin: 0 auto;
+    }
+
+    section.rentals-services {
+        max-width: 1200px;
+    }
+
+    .rentals-blurb {
+        width: 300px;
+    }
+
+    /* --------------------------------- TABLE --------------------------------*/
+
+    .rentals th,
+    .rentals caption {
+        font-size: 20px;
+    }
+
+    .rentals td {
+        font-size: 16px;
     }
 
 }

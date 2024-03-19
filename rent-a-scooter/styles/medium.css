@@ -94,12 +94,14 @@
 
     /* --------------------------------- HOME PAGE BLURBS --------------------------------*/
 
-    .home-blurb img {
+    .home-blurb img,
+    .rentals-blurb img {
         width: 50%;
         margin-bottom: 1.5rem;
     }
 
-    .home-blurb h4 {
+    .home-blurb h4,
+    .rentals-blurb h4 {
         margin-bottom: 1rem;
     }
 
@@ -125,6 +127,53 @@
         padding: 25px 20px;
     }
 
+    /*
+=======================
+===== RENTALS PAGE ====
+=======================
+*/
+
+/* --------------------------------- BLURBS --------------------------------*/
+
+    .rentals main {
+        padding: 40px 0px 50px;
+    }
+
+    .rentals main {
+        margin: 0 auto;
+    }
+
+    .rentals-blurb {
+        width: 250px;
+    }
+
+    section.rentals-services {
+        max-width: 800px;
+    }
+
+    /* --------------------------------- TABLE --------------------------------*/
+
+    .table {
+        padding: 0 40px;
+    }
+
+    .rentals table {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .rentals th {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .rentals td {
+        font-size: 14px;
+    }
+
+    .rentals caption {
+        font-size: 18px;
+    }
 
     /*
 =======================

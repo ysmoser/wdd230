@@ -18,11 +18,12 @@
     <meta property="og:url" content="https://ysmoser.github.io/wdd230/rent-a-scooter/scoots.html">
     <meta property="og:description" content="Scoots">
 </head>
+</head>
 
-<body>
+<body class="rentals">
     <nav>
         <button id="menu" aria-label="Menu" aria-expanded="false"></button>
-        <img src="images/scoots-logo.png" alt="~Scoots~ logo">
+        <img src="images/scoots-logo.png" alt="~Scoots~ logo" id="logo">
         <ul class="navigation">
             <li><a href="#" id="home-link" class="current-page">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
@@ -34,9 +35,57 @@
         <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button
                 onclick="closeMessage()">❌</button>
         </div>
+        <div class="hero">
+            <div class="bg-img">
+                <picture>
+                    <source srcset="images/scooter-fun-desk.webp" media="(min-width: 981px)">
+                    <source srcset="images/scooter-fun-tab.webp" media="(min-width: 620px)">
+                    <source srcset="images/scooter-fun-mobile.webp">
+                    <img src="images/scooter-fun-desk.jpg" alt="Cache Valley Utah" width="1000" height="374">
+                </picture>
+            </div>
+            <div class="headings">
+                <h1>~Scoots~</h1>
+                <p>The Best Mortor Rental in Cozmel</p>
+                <a href="contact.html" class="cta">Reserve Now!</a>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="table">
+        <h2>Check Out Our Rental Options</h2>
+        <section class="rentals-services">
+            <div class="rentals-blurb">
+                <img src="images/scoots-metro.jpg" alt="Honda Metro Scooter">
+                <h4>Honda Motor Scooters</h4>
+                <p>Honda Metropolitan (49cc)</p>
+            </div>
+            <div class="rentals-blurb">
+                <img src="images/scoots-dio.jpg" alt="Honda Dio Scooter">
+                <h4>Honda Motor Scooters</h4>
+                <P>Honda Dio (110cc):</P>
+            </div>
+            <div class="rentals-blurb">
+                <img src="images/scoots-pcx1.jpg" alt="Honda PCX250 Scooter">
+                <h4>Honda Motor Scooters</h4>
+                <p>Honda PCX150 (149cc)</p>
+            </div>
+            <div class="rentals-blurb">
+                <img src="images/scoots-atv.jpg" alt="Honda Pioneer ATV">
+                <h4>Side-by-Side ATVs</h4>
+                <p>Honda Pioneer 1000</p>
+            </div>
+            <div class="rentals-blurb">
+                <img src="images/scoots-jeep1.jpg" alt="Jeep Wrangler - 1 door">
+                <h4>Jeeps</h4>
+                <p>Jeep Wrangler - 2 door</p>
+            </div>
+            <div class="rentals-blurb">
+                <img src="images/scoots-jeep2.jpg" alt="Jeep Wrangler - 2 door">
+                <h4>Jeeps</h4>
+                <P>Jeep Wrangler - 4 door with a/c</P>
+            </div>
+        </section>
+        <section class="table">
             <table>
                 <caption>~Scoots~ Rental Pricing</caption>
                 <thead>
@@ -54,19 +103,20 @@
                 <tbody>
                     <tr>
                         <td>Rental Type</td>
-                        <td>Max. Persons</td>
+                        <!--<td>Max. Persons</td>-->
                         <td>Half Day<br> (3 hrs)</td>
                         <td>Full Day</td>
                         <td>Half Day<br> (3 hrs)</td>
                         <td>Full Day</td>
                     </tr>
                     <tr id="max-prices">
-                        
+
                     </tr>
                 </tbody>
             </table>
-        </div>
+            </h>
     </main>
+
     <footer>
         <div class="footer-info">
             <p>&copy;<span id="year"></span> Yuri Moser </p>
@@ -76,6 +126,7 @@
     </footer>
     <script src="scripts/scoots.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/prices.js"></script>
 </body>
 
 </html>
