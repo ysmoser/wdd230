@@ -1,4 +1,9 @@
 @media (min-width: 981px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
     h3 {
         font-size: 18px;
         line-height: 1.5em;

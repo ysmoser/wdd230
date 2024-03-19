@@ -41,6 +41,11 @@ p {
     margin: 0;
 }
 
+h2 {
+    font-size: 26px;
+    line-height: 1.1em;
+}
+
 h3 {
     font-size: 14px;
     line-height: 1.3em;
@@ -241,6 +246,10 @@ header {
 .home-desc {
     padding: 20px 0px;
     margin: 0 2.5rem;
+}
+
+.home-desc h2 {
+    margin-bottom: 1.2rem;
 }
 
 /* --------------------------------- HOME PAGE BLURBS --------------------------------*/
