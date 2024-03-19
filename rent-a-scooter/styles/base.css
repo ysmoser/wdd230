@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 /* Normalization */
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+    background-color: black;
 }
 
 body {
     margin: 0;
     border: 0;
     vertical-align: baseline;
+    background-color: white;
 }
 
 /*----------------------- GENERAL ---------------------*/
@@ -32,6 +34,7 @@ body {
 
 h3 {
     font-size: 14px;
+    line-height: 1.3em;
     margin: 0;
     padding: .8em 0 .3em;
 }
@@ -156,7 +159,7 @@ ul.navigation {
     border: none;
 }
 
-/* ------------------------------------ HEADINGS ------------------------------------*/
+/* ------------------------------------ HEADER ------------------------------------*/
 
 /*  To remove the unwanted gap between the hero and nav I added the bg color to match the nave */
 header {
@@ -225,6 +228,70 @@ header {
 p.home-desc {
     padding: 20px;
     font-size: 14px;
+}
+
+/* --------------------------------- HOME PAGE BLURBS --------------------------------*/
+.home-blurb img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+section.home-services {
+    background-color: var(--turq-light);
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home-blurb {
+    width: 300px;
+    text-align: center;
+    background-color: black;
+    padding: 30px 0px;
+    margin: 20px 10px;
+}
+
+.home-blurb h3,
+.home-blurb p {
+    color: white;
+}
+
+/* --------------------------------- HOME WEATHER --------------------------------*/
+
+section.weather {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+h4#todays-weather-label,
+h4#tomorrows-forecast-label {
+    font-size: 18px;
+    margin: 0px 0 5px;
+}
+
+h4#tomorrows-forecast-label {
+    margin: 20px 0 5px;
+}
+
+div#current-temp {
+    font-size: 14px;
+}
+
+figure img {
+    width: 50px;
+}
+
+#weather-app figure {
+    margin: 20px 0px;
+}
+
+div#dayofweek1,
+div#forecast {
+    font-size: 14px;
+    line-height: 2em;
 }
 
 /*--------------------------------- Footer -------------------------------*/
