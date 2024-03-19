@@ -7,8 +7,14 @@
         line-height: 1.5em;
     }
 
+    h4 {
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+
     p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5em;
     }
 
@@ -50,7 +56,7 @@
     /*------------------------- HOME HERO SECTION ------------------------*/
 
     .headings {
-        padding: 40px;
+        padding: 40px 40px 45px;
     }
 
     .headings h1 {
@@ -59,21 +65,60 @@
 
     .headings p {
         font-size: 18px;
+        margin-bottom: 2.3rem;
     }
 
-    .headings button.cta {
+    .headings a.cta {
         font-size: 20px;
-        padding: .9em 2em;
+        padding: .7em 2em;
         margin-top: 20px;
+    }
+
+    /* ---------------------- CONTACT INFO ON HOME PAGE BELOW HERO SECTION ------------------------*/
+
+    .home-contacts {
+        grid-gap: 2em;
     }
 
     /* ---------------------- HOME PAGE COMPANY DESCRIPTIONS ------------------------*/
 
-    p.home-desc {
-        font-size: 16px;
+    .home-desc {
         max-width: 900px;
-        margin: 0 auto;
+        margin: 0 4.5rem;
         padding: 40px 0;
+    }
+
+    /* --------------------------------- HOME PAGE BLURBS --------------------------------*/
+
+    .home-blurb img {
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    .home-blurb h4 {
+        margin-bottom: 1rem;
+    }
+
+
+    /* --------------------------------- HOME WEATHER --------------------------------*/
+
+    div#current-temp,
+    div#dayofweek1,
+    div#forecast,
+    .humidity {
+        font-size: 18px;
+    }
+
+    .today {
+        margin-right: 3rem;
+    }
+
+    .tomorrow {
+        margin-left: 3rem;
+    }
+
+    .weather-2cols {
+        padding: 25px 20px;
     }
 
 
