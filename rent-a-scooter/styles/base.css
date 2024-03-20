@@ -471,47 +471,54 @@ tbody tr:first-child {
 }
 
 /*
-============================
-===== RESERVATIONS PAGE ====
-============================
+==============================================
+===== RESERVATIONS PAGE plus CONTACT FORM ====
+==============================================
 */
 
-.reservations .form h2 {
+.reservations .form h2,
+.contact .form h2 {
     text-align: center;
     color: var(--green-dark);
 }
 
 /*---------------------- Form --------------------------*/
-.reservations fieldset {
+.reservations fieldset,
+.contact fieldset {
     margin: 2rem 0;
     border: 1px solid var(--green-dark);
     padding: .5rem 2% 1.2rem;
 
 }
 
-.reservations main {
+.reservations main,
+.contact main {
     margin: 3rem auto;
 }
 
-.reservations form {
+.reservations form,
+.contact form {
     width: 90%;
     margin: 0 auto;
 }
 
-.reservations form legend {
+.reservations form legend,
+.contact form legend {
     color: var(--green-dark);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
 
-.reservations form label.top {
+.reservations form label.top,
+.contact form label.top {
     display: block;
     color: black;
     padding-top: 1rem;
     font-size: 1rem;
 }
 
-.reservations form label.top input {
+.reservations form label.top input,
+.contact form label.top input {
     -webkit-appearacne: none;
     display: block;
     background-color: var(--lightgrey);
@@ -535,7 +542,8 @@ tbody tr:first-child {
 }
 
 /*  Form Button Styling */
-.reservations input.submitBtn {
+.reservations input.submitBtn,
+.contact input.submitBtn {
     font-size: 1.2em;
     background-color: var(--yellow-dark);
     border: none;
@@ -545,7 +553,8 @@ tbody tr:first-child {
     width: 50%;
 }
 
-.reservations input.submitBtn:hover {
+.reservations input.submitBtn:hover,
+.contact input.submitBtn:hover {
     background-color: var(--yellow-light);
 }
 
@@ -566,4 +575,26 @@ label.spec-req {
     color: black;
     display: block;
     margin-top: .8rem;
+}
+
+/*---------------------- Agreement --------------------------*/
+
+.agreement {
+    background-color: var(--lightgrey);
+    padding: 2rem 10px;
+    margin: 2rem .8rem;
+}
+
+.agreement h2 {
+    text-align: center;
+}
+
+.agreement ul {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.agreement li {
+    font-size: 16px
 }

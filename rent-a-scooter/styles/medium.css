@@ -196,6 +196,17 @@
         width: 80%;
     }
 
+    /* --------------------------------- AGREEMENT --------------------------------*/
+    .agreement {
+        max-width: 960px;
+        width: 80%;
+        margin: 2rem auto;
+    }
+    
+    .agreement li {
+        font-size: 18px;
+    }
+
     /*
 =======================
 ===== ATTRIBUTIONS ====
