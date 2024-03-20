@@ -512,7 +512,7 @@ tbody tr:first-child {
 }
 
 .reservations form label.top input {
-    --webkit-appearacne: none;
+    -webkit-appearacne: none;
     display: block;
     background-color: var(--lightgrey);
     font-size: 1rem;
@@ -550,7 +550,6 @@ tbody tr:first-child {
 }
 
 label.spec-req textarea {
-    -webkit-appearance: none;
     display: block;
     background-color: var(--lightgrey);
     font-size: 1rem;
