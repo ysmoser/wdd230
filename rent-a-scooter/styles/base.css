@@ -342,12 +342,18 @@ footer {
     padding: 30px 3px;
 }
 
-footer p {
+footer p,
+.footer-links a {
     color: black;
     margin: 5px;
 }
 
-.footer-info {
+.footer-links a.attr:hover {
+    color: var(--midgrey);
+}
+
+.footer-info,
+.footer-links {
     display: flex;
     flex-direction: column;
     align-items: center;

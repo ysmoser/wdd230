@@ -52,9 +52,16 @@
     }
 
     /* Footer */
-    .footer-info {
+    .footer-info,
+    .footer-links {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .fb-icon img {
+        width: 40px;
+        height: auto;
+        margin-left: 10px;
     }
 
     /*------------------------- HOME HERO SECTION ------------------------*/
