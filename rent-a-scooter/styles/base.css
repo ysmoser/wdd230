@@ -545,6 +545,10 @@ tbody tr:first-child {
     width: 50%;
 }
 
+.reservations input.submitBtn:hover {
+    background-color: var(--yellow-light);
+}
+
 label.spec-req textarea {
     -webkit-appearance: none;
     display: block;
