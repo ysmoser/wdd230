@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description"
+        content="~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <link rel="icon" href="fav-scoots.png">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/rent-a-scooter/images/riding-scooter-fb.webp">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/rent-a-scooter/scoots.html">
+    <meta property="og:description" content="Scoots">
+</head>
+</head>
+
+<body class="reservations">
+    <nav>
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <img src="images/scoots-logo.png" alt="~Scoots~ logo" id="logo">
+        <ul class="navigation">
+            <li><a href="#" id="home-link" class="current-page">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button
+                onclick="closeMessage()">❌</button>
+        </div>
+        <div class="hero">
+            <div class="bg-img">
+                <picture>
+                    <source srcset="images/scooter-fun-desk.webp" media="(min-width: 981px)">
+                    <source srcset="images/scooter-fun-tab.webp" media="(min-width: 620px)">
+                    <source srcset="images/scooter-fun-mobile.webp">
+                    <img src="images/scooter-fun-desk.jpg" alt="Cache Valley Utah" width="1000" height="374">
+                </picture>
+            </div>
+            <div class="headings">
+                <h1>Reservations</h1>
+                <p></p>
+                <a href="contact.html" class="cta">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <div class="form">
+                <h2>Reservation Form</h2>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                        <label class="top">Last Name*<input type="text" name="lname" id="lname" required></label>
+                        <label class="top">Email*<input type="email" name="email" id="email"
+                                placeholder="someone@gmail.com" required></label>
+                        <label class="top">Phone<input type="tel" name="phone" id="phone"
+                                placeholder="1235551234"></label>
+                        <label class="top" for="state-country">Home State or Country: <input type="text"
+                                name="statecountry" id="state-country" required></label>
+                        <label class="top" for="cruise-line">Cruise Line (if applicable): <input type="text"
+                                name="cruiseline" id="cruise-line"></label>
+                    </fieldset>
+                    <fieldset class="reservation-info">
+                        <legend>Rental Info</legend>
+                        <label class="sbs top" for="rental-date">Rental Date: <input type="date" name="rentaldate"
+                                id="rental-date" required></label>
+                        <label class="sbs top" for="number-of-people">Number of People: <input type="number"
+                                name="people" id="number-of-people" min="1" max="10" required></label>
+                        <div>Rental Type</div>
+                        <label class="sbs"><input type="radio" name="rentaltypes" value="scooter"> Honda Metro
+                            Scooter</label>
+                        <label class="sbs"><input type="radio" name="rentaltypes" value="scooter"> Honda Dio
+                            Scooter</label>
+                        <label class="sbs"><input type="radio" name="rentaltypes" value="scooter"> Honda PCX150
+                            Scooter</label>
+                        <label class="sbs"><input type="radio" name="rentaltypes" value="atv"> Honda Pioneer ATV</label>
+                        <label class="sbs"><input type="radio" name="rentaltypes" value="jeep"> Jeep Wrangler 4
+                            Door</label>
+                        <label class="sbs"><input type="radio" name="rentaltypes" value="jeep"> Jeep Wrangler 2
+                            Door</label>
+                        <label class="spec-req" for="special-requests">Special Accommodations / Comments:
+                            <textarea name="describe" id="describe" required></textarea>
+                        </label>
+                        <label class="sbs top"><input type="hidden" name="datetime" id="datetime"></label>
+                    </fieldset>
+                    <input type="submit" value="Apply Now!" class="submitBtn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="attributions.html" class="attr" target="_blank">Attributions</a>
+            <a href="https://www.facebook.com" class="fb-icon" target="_blank">
+                <img src="images/facebook-icon.png" alt="Faceobook Icon">
+            </a>
+        </div>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span> Yuri Moser </p>
+            <p>BYUI WDD230</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

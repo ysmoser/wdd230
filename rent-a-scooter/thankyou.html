@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta name="author" content="Yuri Moser">
+    <meta name="description"
+        content="~Scoots~ is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <link rel="icon" href="fav-scoots.png">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ysmoser.github.io/wdd230/rent-a-scooter/images/riding-scooter-fb.webp">
+    <meta property="og:url" content="https://ysmoser.github.io/wdd230/rent-a-scooter/scoots.html">
+    <meta property="og:description" content="Scoots">
+</head>
+</head>
+
+<body class="reservations">
+    <nav>
+        <button id="menu" aria-label="Menu" aria-expanded="false"></button>
+        <img src="images/scoots-logo.png" alt="~Scoots~ logo" id="logo">
+        <ul class="navigation">
+            <li><a href="#" id="home-link" class="current-page">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="high-temp-message">High Temp: <span id="high-temp"></span>°F <button
+                onclick="closeMessage()">❌</button>
+        </div>
+        <div class="hero">
+            <div class="bg-img">
+                <picture>
+                    <source srcset="images/scooter-fun-desk.webp" media="(min-width: 981px)">
+                    <source srcset="images/scooter-fun-tab.webp" media="(min-width: 620px)">
+                    <source srcset="images/scooter-fun-mobile.webp">
+                    <img src="images/scooter-fun-desk.jpg" alt="Cache Valley Utah" width="1000" height="374">
+                </picture>
+            </div>
+            <div class="headings">
+                <h1>~Scoots~</h1>
+                <p>The Best Mortor Rental in Cozmel</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Thank You for Your Reservation!</h1>
+        <p>We've received your reservation request and are excited to welcome you soon. A confirmation email has been
+            sent to your provided email address with all the details of your reservation. If you have any immediate
+            questions or need to make changes to your reservation, please don't hesitate to contact us.</p>
+
+        <p>We look forward to providing you with an exceptional experience. Thank you for choosing us for your
+            adventure!</p>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="attributions.html" class="attr" target="_blank">Attributions</a>
+            <a href="https://www.facebook.com" class="fb-icon" target="_blank">
+                <img src="images/facebook-icon.png" alt="Faceobook Icon">
+            </a>
+        </div>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span> Yuri Moser </p>
+            <p>BYUI WDD230</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

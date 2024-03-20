@@ -469,3 +469,98 @@ section.rentals-services {
 tbody tr:first-child {
     background-color: var(--turq-light);
 }
+
+/*
+============================
+===== RESERVATIONS PAGE ====
+============================
+*/
+
+.reservations .form h2 {
+    text-align: center;
+    color: var(--green-dark);
+}
+
+/*---------------------- Form --------------------------*/
+.reservations fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--green-dark);
+    padding: .5rem 2% 1.2rem;
+
+}
+
+.reservations main {
+    margin: 3rem auto;
+}
+
+.reservations form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.reservations form legend {
+    color: var(--green-dark);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+.reservations form label.top {
+    display: block;
+    color: black;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.reservations form label.top input {
+    --webkit-appearacne: none;
+    display: block;
+    background-color: var(--lightgrey);
+    font-size: 1rem;
+    border: 1px solid var(--midgrey);
+    padding: .75rem;
+    width: calc(100% - 1.5rem);
+    max-width: 20rem;
+    box-sizing: border-box;
+}
+
+.reservations form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: black;
+    font-size: 1rem;
+}
+
+.reservations .reservation-info #bizname {
+    margin: 0rem 0 1rem;
+}
+
+/*  Form Button Styling */
+.reservations input.submitBtn {
+    font-size: 1.2em;
+    background-color: var(--yellow-dark);
+    border: none;
+    padding: .8em 1.5em;
+    color: black;
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+label.spec-req textarea {
+    -webkit-appearance: none;
+    display: block;
+    background-color: var(--lightgrey);
+    font-size: 1rem;
+    border: 1px solid var(--midgrey);
+    padding: 0.75rem;
+    width: calc(100% - 1.5rem);
+    max-width: 20rem;
+    box-sizing: border-box;
+    height: 8rem;
+}
+
+label.spec-req {
+    font-size: 16px;
+    color: black;
+    display: block;
+    margin-top: .8rem;
+}
