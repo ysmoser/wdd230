@@ -57,21 +57,29 @@ header {
 .headings h1 {
     margin: 0;
     color: white;
-    font-size: 2em;
+    font-size: 35px;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.home-page .hero .headings h1 {
-    font-size: 1.5rem;
+/* Home Page Only */
+.home-page .headings h1 {
+    font-size: 1.5em;
+}
+
+/* Join Page Only */
+.join-us .hero .headings h1 {
+    font-size: 40px;
 }
 
 .headings .cta {
     margin-top: 1.5rem;
     background-color: var(--red);
     color: white;
-    font-size: 15.5px;
+    font-size: 13px;
     padding: .8em 1.5em;
     border: none;
+    text-decoration: none;
 }
 
 
@@ -606,4 +614,8 @@ button#list:hover {
 
 .list section:nth-child(even) {
     background-color: #fff;
+}
+
+#members a {
+    hyphens: auto;
 }

@@ -1,16 +1,22 @@
 @media (min-width: 981px) {
 
     .hero .headings h1 {
-        font-size: 3.5em;
+        font-size: 40px;
         padding: 1.1rem 20px;
+        margin-bottom: 2.5rem;
     }
 
     .home-page .hero .headings h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
     }
 
-    .headings button.cta {
-        font-size: 1em;
+    .join-us .hero .headings h1 {
+        font-size: 60px;
+    }
+
+    .headings a.cta {
+        font-size: 20px;
     }
 
     footer {
