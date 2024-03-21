@@ -156,4 +156,36 @@
         font-size: 20px;
     }
 
+    /*  Form Button Styling */
+    .reservations input.submitBtn,
+    .contact input.submitBtn {
+        width: 40%;
+        font-size: 18px;
+    }
+
+    /*
+=======================
+=====   THANK YOU  ====
+=======================
+*/
+
+    .thankyou main {
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    .thankyou .headings {
+        padding: 4rem 4.5rem;
+    }
+
+    .thankyou .headings p {
+        margin: 1rem 0;
+        font-size: 20px;
+    }
+
+    .thankyou .headings h1 {
+        font-size: 60px;
+    }
+
+
 }

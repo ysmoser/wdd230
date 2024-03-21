@@ -544,13 +544,13 @@ tbody tr:first-child {
 /*  Form Button Styling */
 .reservations input.submitBtn,
 .contact input.submitBtn {
-    font-size: 1.2em;
+    font-size: 14px;
     background-color: var(--yellow-dark);
     border: none;
     padding: .8em 1.5em;
     color: black;
     margin-bottom: 2em;
-    width: 50%;
+    width: 60%;
 }
 
 .reservations input.submitBtn:hover,
@@ -597,4 +597,78 @@ label.spec-req {
 
 .agreement li {
     font-size: 16px
+}
+
+/*
+=======================
+===== CONTACT PAGE ====
+=======================
+*/
+
+.contact-container {
+    max-width: 960px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.our-info {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 15px 15px 25px;
+    background-color: var(--lightgrey);
+}
+
+.our-info h3 {
+    font-size: 20px;
+    color: black;
+    margin: 0 0 .5rem;
+}
+
+div.our-info h2 {
+    color: var(--green-dark);
+    margin: 1rem 0 0;
+}
+
+.our-info p {
+    font-size: 16px;
+}
+
+
+.our-info div:first-child {
+    padding-bottom: 1rem;
+}
+
+/*
+=======================
+===== ATTRIBUTIONS ====
+=======================
+*/
+
+.facebook-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+/*
+=======================
+=====   THANK YOU  ====
+=======================
+*/
+
+.thankyou main {
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.thankyou .headings p {
+    margin: .3rem 0;
+    font-size: 16px;
+}
+
+.thankyou .headings {
+    padding: 15px;
+}
+
+.thankyou .headings h1 {
+    font-size: 30px;
 }

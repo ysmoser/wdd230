@@ -196,15 +196,68 @@
         width: 80%;
     }
 
+    /*  Form Button Styling */
+    .reservations input.submitBtn,
+    .contact input.submitBtn {
+        width: 50%;
+        font-size: 16px;
+    }
+
     /* --------------------------------- AGREEMENT --------------------------------*/
     .agreement {
         max-width: 960px;
         width: 80%;
         margin: 2rem auto;
     }
-    
+
     .agreement li {
         font-size: 18px;
+    }
+
+    /*
+=======================
+=====   CONTACT    ====
+=======================
+*/
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 20px;
+        max-width: 960px;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .our-info {
+        width: 80%;
+        padding: 20px 40px 35px;
+    }
+
+    div.our-info h2 {
+        font-size: 26px;
+    }
+
+    .our-info p {
+        font-size: 18px;
+    }
+
+    /*
+=======================
+=====   THANK YOU  ====
+=======================
+*/
+
+    .thankyou .headings {
+        padding: 2rem 2.5rem;
+    }
+
+    .thankyou .headings p {
+        font-size: 18px;
+    }
+
+    .thankyou .headings h1 {
+        font-size: 40px;
     }
 
     /*
