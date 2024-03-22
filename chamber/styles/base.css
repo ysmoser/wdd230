@@ -67,11 +67,6 @@ header {
     font-size: 1.5em;
 }
 
-/* Join Page Only */
-.join-us .hero .headings h1 {
-    font-size: 40px;
-}
-
 .headings .cta {
     margin-top: 1.5rem;
     background-color: var(--red);
