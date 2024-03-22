@@ -58,7 +58,10 @@
 */
 
     .directory section h2 {
-        font-size: 1.1em;
+        font-size: 1.3em;
+        line-height: 1.1em;
+        padding-bottom: 3px;
+        padding-top: 3px;
     }
 
     .directory section p,

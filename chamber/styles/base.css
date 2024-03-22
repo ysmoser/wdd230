@@ -569,6 +569,7 @@ button#list:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
     align-items: center;
+    align-items: stretch;
 }
 
 .directory #members img,
