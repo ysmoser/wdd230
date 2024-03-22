@@ -174,8 +174,8 @@ ul.navigation {
 
 #high-temp-message button {
     margin-left: 15px;
-    background-color: black;
-    border: none;
+    background-color: white;
+    border: 1px solid black;
 }
 
 /* ------------------------------------ HEADER ------------------------------------*/
