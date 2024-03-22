@@ -32,6 +32,12 @@
         padding-left: 5px;
     }
 
+    /*----------------------------- HIGHT TEMP ABOVE HERO SECTION ------------------------------*/
+    #high-temp-message {
+        padding: 15px 0;
+        font-size: 20px;
+    }
+
     /*------------------------- HOME HERO SECTION ------------------------*/
 
     body {

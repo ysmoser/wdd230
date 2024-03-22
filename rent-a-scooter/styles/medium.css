@@ -64,6 +64,12 @@
         margin-left: 10px;
     }
 
+    /*----------------------------- HIGHT TEMP ABOVE HERO SECTION ------------------------------*/
+    #high-temp-message {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
     /*------------------------- HOME HERO SECTION ------------------------*/
 
     .headings {
