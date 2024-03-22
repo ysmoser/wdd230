@@ -368,7 +368,9 @@ div#spotlights {
     box-shadow: -1px 10px 21px -13px var(--shadow);
 }
 
-
+.company-info a {
+    hyphens: auto;
+}
 
 
 /*
