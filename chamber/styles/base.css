@@ -417,10 +417,6 @@ main.join .table {
     color: var(--grey-dark);
 }
 
-ht.visibility {
-    visibility: hidden;
-    border: none;
-}
 
 /*---------------------- table om JOIN PAGE --------------------------*/
 table {
@@ -436,8 +432,7 @@ caption {
     font-size: 1.1em;
 }
 
-tr:first-child th,
-tr:nth-child(2) th:first-child {
+tr:first-child th {
     background-color: var(--grey-dark);
     color: white;
     border-color: var(--grey-dark);
@@ -455,12 +450,19 @@ tr:nth-child(2) th:not(:first-child) {
     border-right: 1px solid var(--midgrey);
 }
 
+
 td {
     text-align: center;
 }
 
 tbody tr:nth-child(even) {
     background-color: var(--lightgrey);
+}
+
+.table th.visibility {
+    color: var(--grey-dark);
+    background-color: var(--grey-dark);
+    border-color: var(--grey-dark);
 }
 
 /*---------------------- Form on JOIN PAGE --------------------------*/
