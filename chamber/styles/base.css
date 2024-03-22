@@ -417,6 +417,11 @@ main.join .table {
     color: var(--grey-dark);
 }
 
+ht.visibility {
+    visibility: hidden;
+    border: none;
+}
+
 /*---------------------- table om JOIN PAGE --------------------------*/
 table {
     border: thin solid var(--lightgrey);
