@@ -432,7 +432,8 @@ caption {
     font-size: 1.1em;
 }
 
-tr:first-child th {
+tr:first-child th,
+tr:nth-child(2) th:first-child {
     background-color: var(--grey-dark);
     color: white;
     border-color: var(--grey-dark);
@@ -459,10 +460,10 @@ tbody tr:nth-child(even) {
     background-color: var(--lightgrey);
 }
 
-.table th.visibility {
-    color: var(--grey-dark);
-    background-color: var(--grey-dark);
-    border-color: var(--grey-dark);
+th.visibility {
+    visibility: hidden;
+    border: none;
+
 }
 
 /*---------------------- Form on JOIN PAGE --------------------------*/
