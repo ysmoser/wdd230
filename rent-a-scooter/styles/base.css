@@ -479,6 +479,10 @@ thead th.our-rental {
     color: white;
 }
 
+th.visibility {
+    visibility: hidden;
+}
+
 /*
 ==============================================
 ===== RESERVATIONS PAGE plus CONTACT FORM ====
