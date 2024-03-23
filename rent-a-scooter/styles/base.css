@@ -438,11 +438,10 @@ section.rentals-services {
     font-size: 16px;
 }
 
-.rentals tr:first-child th,
-.rentals tr:nth-child(2) th:first-child {
-    background-color: var(--green-dark);
-    color: white;
-    border-color: var(--green-dark);
+.rentals tr th {
+    background-color: var(--turq-light);
+    color: black;
+    border-color: var(--midgrey);
 }
 
 .rentals th {
@@ -457,9 +456,10 @@ section.rentals-services {
     border: 1px solid var(--midgrey);
 }
 
-.rentals tr:nth-child(2) th:not(:first-child) {
-    background-color: var(--turq-light);
+.rentals tr:nth-child(2) th {
+    background-color: var(--green-dark);
     border-right: 1px solid var(--midgrey);
+    color: white;
 }
 
 .rentals td {
@@ -474,9 +474,9 @@ tbody tr:first-child {
     background-color: var(--turq-light);
 }
 
-th.visibility {
-    visibility: hidden;
-    border: none;
+thead th.our-rental {
+    background-color: var(--green-dark);
+    color: white;
 }
 
 /*
