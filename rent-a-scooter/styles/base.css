@@ -474,6 +474,11 @@ tbody tr:first-child {
     background-color: var(--turq-light);
 }
 
+th.visibility {
+    visibility: hidden;
+    border: none;
+}
+
 /*
 ==============================================
 ===== RESERVATIONS PAGE plus CONTACT FORM ====
