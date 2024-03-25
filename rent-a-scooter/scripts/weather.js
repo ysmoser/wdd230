@@ -48,7 +48,10 @@ function displayCurrentWeather(data, containerId) {
 
 
 // Display one-day forecast
-function displayOneDayForecast(data) {
+function displayOneDayForecast(data, containerId) {
+    const container = document.querySelector(containerId);
+    if (!container) return;
+
     const forecast = data.list.find(x => x.dt_txt.includes('15:00:00'));
     if (forecast) {
         const dateParts = forecast.dt_txt.split(/[- :]/);
@@ -60,6 +63,12 @@ function displayOneDayForecast(data) {
         const dayOfWeek = forecastDate.toLocaleDateString('en-US', { weekday: 'short' });
         const temp = `${Math.round(forecast.main.temp_max)}°F`;
 
+        // Create and append weather conditions
+        const weatherCond = document.createElement('div');
+        forecast.weather.forEach(event => createWeatherElement(event, weatherCond));
+        container.appendChild(weatherCond);
+
+        // Update day and temperature
         const dayOfWeekElement = document.querySelector('#dayofweek1');
         const tempElement = document.querySelector('#forecast1');
 
@@ -71,7 +80,6 @@ function displayOneDayForecast(data) {
         }
     }
 }
-
 
 
 
