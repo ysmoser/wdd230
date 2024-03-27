@@ -94,7 +94,10 @@
     /* ---------------------- CONTACT INFO ON HOME PAGE BELOW HERO SECTION ------------------------*/
 
     .home-contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
+        border: none;
     }
 
     /* ---------------------- HOME PAGE COMPANY DESCRIPTIONS ------------------------*/
