@@ -653,6 +653,26 @@ div.our-info h2 {
     padding-bottom: 1rem;
 }
 
+
+/*------------------------------- GOOGLE MAP -------------------------------*/
+
+.google-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-map iframe:first-child {
+    margin-bottom: 2rem;
+}
+
+.google-map iframe {
+    width: 90%;
+    max-width: 1000px;
+}
+
+
+
 /*
 =======================
 ===== ATTRIBUTIONS ====
