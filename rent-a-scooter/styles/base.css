@@ -379,6 +379,10 @@ footer p,
     color: var(--green-dark);
 }
 
+.rentals section.table {
+    margin-top: 2rem;
+}
+
 /* --------------------------------- BLURBS --------------------------------*/
 .rentals-blurb img {
     width: 50%;
